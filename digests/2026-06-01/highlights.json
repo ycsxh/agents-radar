@@ -55,6 +55,14 @@
       "Claude vs Gemini 安全加固集体失效",
       "教皇 AI 通谕引发 73 条哲学辩论",
       "100% Vibe Coding 与停止思考的警示张力"
+    ],
+    "ai-weekly": [
+      "Anthropic 融资 $65B 估值 $965B，年化收入 $470 亿",
+      "Claude Opus 4.8 发布，快速模式降价 2/3",
+      "Claude 首获 CVE-2026-28952，AI 独立发现系统漏洞",
+      "rsync 爆发 AI 提交危机，社区急呼标记规范",
+      "Stop Slop 运动兴起，反 AI 平庸化项目集体登榜",
+      "DeepSeek TUI 更名 CodeWhale，v0.8.48 确立独立身份"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "Markdown becomes de facto AI-developer interface layer",
       "Vatican encyclical on AI ethics hits 133 Lobste.rs points",
       "AI Won't Save You From Forgetting How to Think tops comments"
+    ],
+    "ai-weekly": [
+      "Anthropic raises $65B at $965B valuation",
+      "Claude Opus 4.8 cuts prices by 66%",
+      "Claude Design targets Figma/Canva market",
+      "rsync hit by LLM-generated commits crisis",
+      "AI finds first macOS kernel CVE",
+      "Anti-Slop developer movement emerges"
     ]
   }
 }
