@@ -63,6 +63,14 @@
       "rsync 爆发 AI 提交危机，社区急呼标记规范",
       "Stop Slop 运动兴起，反 AI 平庸化项目集体登榜",
       "DeepSeek TUI 更名 CodeWhale，v0.8.48 确立独立身份"
+    ],
+    "ai-monthly": [
+      "微软终止OpenAI独家云协议，云AI格局重构",
+      "Claude Code计费漏洞爆发，945👍触发配额透明度运动",
+      "Anthropic获22万块GPU算力，Claude速率限制翻倍",
+      "Andrej Karpathy加入Anthropic，MCP生态闭环成型",
+      "OpenAI秘密提交IPO文件，资本市场故事遇冷",
+      "AI首次证伪离散几何猜想，656分激辩真突破还是暴力搜索"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "rsync hit by LLM-generated commits crisis",
       "AI finds first macOS kernel CVE",
       "Anti-Slop developer movement emerges"
+    ],
+    "ai-monthly": [
+      "Microsoft ends OpenAI exclusive cloud deal",
+      "Claude Code censorship sparks OpenClaw fork",
+      "Anthropic lands SpaceX 300MW GPU deal",
+      "OpenAI becomes 'Deployment Company'",
+      "Anthropic backs China chip export controls",
+      "Andrej Karpathy joins Anthropic"
     ]
   }
 }
