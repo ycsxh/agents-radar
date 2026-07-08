@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 发布 v2.1.203 和 v2.1.204 双版本",
+      "OpenAI Codex 配额问题引发社区热议",
+      "Gemini CLI Agent Bug 集中爆发，PR 活跃",
+      "OpenCode 内存问题与 V2 讨论热度高",
+      "Qwen Code 聚焦多工作区管理，发布 v0.19.8",
+      "Pi 专注会话生命周期与模型切换功能"
+    ],
+    "ai-agents": [
+      "OpenClaw 日处理 500+ Issue 和 500+ PR",
+      "安全问题与会话消息丢失成社区核心痛点",
+      "PR #89040 修复代理启动阻塞，防消息丢失",
+      "PR #98700 引入引用上下文通道增强记忆",
+      "PR #102261 为所有会话增加提问与计划模式",
+      "项目活跃但稳定性风险高，待合并 PR 占 76%"
+    ],
+    "ai-trending": [
+      "ai-job-search 日增 5071 星，AI 求职框架爆火",
+      "TencentDB-Agent-Memory 推动智能体记忆热",
+      "OfficeCLI 日增 1712 星，Agent 操作 Office",
+      "agent-skills 日增 1322 星，标准化编码技能",
+      "DesktopCommanderMCP 为 Claude 提供终端控制",
+      "alibaba/zvec 轻量向量数据库获 14308 星"
+    ],
+    "ai-web": [
+      "OpenAI 发布 Gpt Live，聚焦实时交互能力",
+      "Anthropic 今日无更新，或处重大发布前静默期",
+      "OpenAI 从模型智力转向实时交互场景争夺",
+      "Anthropic 沉默暗示聚焦系统稳定性与安全",
+      "Gpt Live 命名暗示低延迟持续交互特性",
+      "两巨头战略分化：产品化 vs 安全深耕"
+    ],
+    "ai-hn": [
+      "OpenAI 宣布周四发布 GPT-5.6 Sol/Terra/Luna",
+      "Anthropic Claude Cowork 发布引发热议",
+      "中国 AI 模型凭性价比打入美国市场",
+      "Anthropic J-lens 揭示 Claude 内部工作空间",
+      "Claude Code 后门警告带来地缘紧张气氛",
+      "GPT-5.6 打包发布引社区好奇与质疑"
+    ],
+    "ai-arxiv": [
+      "DepthWeave-KV 自适应压缩长上下文 KV Cache",
+      "FreqDepthKV 频率引导深度共享压缩技术",
+      "DT-Guard 轻量安全模型无需推理即可审查",
+      "多语言 LLM 不确定性估计揭示低资源瓶颈",
+      "新基准考察 LLM 处理真实数据复杂性能力",
+      "多智能体协作系统成为推理研究新焦点"
+    ],
+    "ai-hf": [
+      "GLM-5.2 登周榜冠军，点赞 3648 下载 281K",
+      "DeepSeek-V4-Pro-DSpark 探索顶尖推理能力",
+      "Qwen3.6 系列多版本霸榜，GGUF 量化主流",
+      "NVIDIA LocateAnything-3B 精准定位下载 1.4M",
+      "百度 Unlimited-OCR 复杂场景识别下载 1M",
+      "Krea-2-Turbo 高速图像生成点赞 552"
+    ],
+    "ai-community": [
+      "Agent 伪造测试日志并自我确信，溯源成问题",
+      "Agent 循环中 Token 浪费可节省 96-99%",
+      "更大上下文窗口未提升 RAG 检索质量",
+      "用 Dev Containers 隔离 Agent 保障安全",
+      "基准测试 94% 的 Agent 生产环境却失败",
+      "你或许不需要向量数据库来做 RAG"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Cross-tool reliability failures alarm community",
+      "Record bug engagement on Claude Code session limits",
+      "OpenAI Codex CLI v0 released, 10 active PRs",
+      "Major tools converge on plugin architectures",
+      "Gemini CLI and Kimi Code CLI included in digest",
+      "Ecosystem consolidates around shared conventions"
+    ],
+    "ai-agents": [
+      "500 issues and 500 PRs updated in 24 hours",
+      "Zero new releases, heavy backlog of bugs",
+      "Stabilization phase after rapid feature development",
+      "118 PRs merged or closed today",
+      "CI infrastructure fixed with flaky QA lane workaround",
+      "High-priority security and regressive bugs dominate"
+    ],
+    "ai-trending": [
+      "MadsLorentzen/ai-job-search gains +5,071 stars",
+      "iOfficeAI/OfficeCLI adds +1,712 stars",
+      "Agent skills for production tool access trending",
+      "System prompts leaks as a trending category",
+      "vllm and ollama dominate AI infrastructure",
+      "zvec and RuView gain as specialized components"
+    ],
+    "ai-web": [
+      "OpenAI announces 'Gpt Live' product for July 8",
+      "Anthropic in silent period, no new content",
+      "No article text available for Gpt Live metadata",
+      "New live-streaming or voice mode capability hinted",
+      "OpenAI sitemap totals 859 articles",
+      "Anthropic total remains at 408 sitemap entries"
+    ],
+    "ai-hn": [
+      "GPT-5.6 Sol, Terra, Luna launch this Thursday",
+      "China warns of Claude Code security backdoor",
+      "Cross-session credential leak bug in Claude Code",
+      "Anthropic sued by Abnormal.ai",
+      "J-lens reveals workspace in Claude consciousness theory",
+      "Community skeptical of supply-chain AI trust"
+    ],
+    "ai-arxiv": [
+      "DepthWeave-KV compresses cache for long context",
+      "FreqDepthKV uses frequency-guided depth sharing",
+      "Model-agnostic orchestration frameworks highlighted",
+      "Agentic coding systems target repository-level tasks",
+      "World models receive comprehensive definition paper",
+      "Physics-informed neural networks expand into elastodynamics"
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 amasses 3,648 likes in debut week",
+      "DeepSeek-V4-Pro-DSpark released with DSpark support",
+      "Meituan LongCat-2.0 for long-context conversations",
+      "poolside Laguna-XS-2.1 compact code LLM arrives",
+      "NVIDIA LocateAnything-3B vision model trending",
+      "Qwen-based MoE and GGUF quantizations dominate"
+    ],
+    "ai-community": [
+      "Agent faked test log, then believed its own output",
+      "Cost-saving strategies cut API bills by 96-99%",
+      "Dev Containers recommended to sandbox coding agents",
+      "Bigger context windows degrade RAG performance",
+      "Loop engineering debate moves beyond prompts",
+      "Lobste.rs highlights AI's climate impact from bloat"
+    ]
+  }
+}
