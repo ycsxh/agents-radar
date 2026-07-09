@@ -1,127 +1,74 @@
 # ArXiv AI Research Digest 2026-07-09
 
-> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-07-08 17:22 UTC
+> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-07-09 03:55 UTC
 
 ---
 
-# ArXiv AI Research Digest — 2026-07-09
+# ArXiv AI Research Digest · July 9, 2026
 
-## Today's Highlights
+## 1. Today’s Highlights
+Today’s papers push the frontiers of reasoning-model training by moving beyond final-answer grading to explicit reward for the reasoning trace itself (Agon, Max Out GRPO), and they rigorously examine whether post-training RL merely amplifies existing skills or composes new strategies. In parallel, agent research shifts from single-model red-teaming to institutional-level evaluation that tests how **deployment rules, not just model capabilities, causally shape multi-agent safety**. Efficiency innovations span transformer linearization, spectral attention preprocessing, and skill libraries that aim to make autonomous agents both more capable and more grounded.
 
-Today's submissions reveal a strong push toward **model-agnostic orchestration frameworks and agentic systems** for complex, multi-step reasoning tasks. Several papers tackle the critical challenge of **KV cache compression for long-context LLM inference**, with novel approaches leveraging frequency-guided depth sharing and cross-layer residual factorization. The **agentic coding and verification** space sees significant activity, with benchmarks targeting repository-level tasks in native languages and systems that automatically generate formal proofs. Notably, **world models** receive a comprehensive definition and roadmap paper, while **physics-informed neural networks** continue to expand into elastodynamics and PDE solution families. A clear trend toward **safety, robustness, and interpretability** emerges across multiple subfields.
+## 2. Key Papers
 
----
+### 🧠 Large Language Models
+- **[Co-LMLM: Continuous-Query Limited Memory Language Models](http://arxiv.org/abs/2607.07707v1)**  
+  *Yair Feldman et al.* — Introduces continuous queries that let language models dynamically fetch knowledge from an external KB during generation, improving factual reliability without memorizing all facts in weights.
 
-## Key Papers
+- **[The Key to Going Linear: Analysis-Driven Transformer Linearization](http://arxiv.org/abs/2607.07706v1)**  
+  *Anna Kuzina et al.* — Isolates which components matter in post-hoc attention linearization, enabling low-cost long-context inference with minimal quality loss.
 
-### 🧠 Large Language Models (architecture, training, alignment, evaluation)
+- **[Future Confidence Distillation in Large Language Models](http://arxiv.org/abs/2607.07626v1)**  
+  *Sahil Kale* — Trains LLMs to estimate their own future answer reliability before generating, a crucial step for confidence-aware downstream routing and tool use.
 
-**1. DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache Compression**
-Link: http://arxiv.org/abs/2607.06523v1
-Authors: Anna Cordoba, Adam Puente Tercero, Nerea Angulo Hijo et al.
-*Introduces token-adaptive cross-layer residual factorization for KV cache compression, addressing the critical memory bottleneck in long-context LLM inference by preserving retrieval fidelity under aggressive compression budgets.*
+- **[PALS: Percentile-Aware Layerwise Sparsity for LLM Pruning](http://arxiv.org/abs/2607.07557v1)**  
+  *Yazdan Jamshidi et al.* — Adapts per-layer sparsity based on activation magnitudes, outperforming one-shot pruning that blindly applies uniform ratios across all transformer layers.
 
-**2. FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression in Long-Context LLM Inference**
-Link: http://arxiv.org/abs/2607.06519v1
-Authors: Anna Córdoba, Adam Puente Tercero, Nerea Angulo Hijo et al.
-*Proposes frequency-guided depth sharing that factorizes adjacent layers' KV states to maintain layer-specific evidence for retrieval and multi-step reasoning while significantly reducing cache memory costs.*
+### 🤖 Agents & Reasoning
+- **[Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety](http://arxiv.org/abs/2607.07695v1)**  
+  *Yujiao Chen* — Demonstrates that varying only deployment rules (keeping agents fixed) can dramatically alter collective behavior, introducing a methodology for institutional rather than model-centric safety evaluation.
 
-**3. DT-Guard: Intent-Driven Reasoning-Active Training for Reasoning-Free LLM Safety Guardrail**
-Link: http://arxiv.org/abs/2607.06326v1
-Authors: He Liu, Changtao Miao, Xinjie Yang et al.
-*Presents a lightweight safety guardrail that achieves robust moderation through intent-driven reasoning-active training, bridging the efficiency-robustness trade-off between classification-based and LLM-based guardrails.*
+- **[SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents](http://arxiv.org/abs/2607.07676v1)**  
+  *Tianming Sha et al.* — Releases a massive open skill library that grounds agent actions in verified documentation, making autonomous outputs not just executable but correct, secure, and maintainable.
 
-**4. Estimating Uncertainty from Reasoning: A Large-Scale Study of Multi- and Crosslingual MCQA Performance in LLMs**
-Link: http://arxiv.org/abs/2607.06327v1
-Authors: Andrea Alfarano, Andrea Bacciu, Saab Mansour et al.
-*First large-scale evaluation of uncertainty estimation methods across 22 languages, revealing critical gaps in existing UE approaches for low-resource languages and providing practical benchmarks for abstention-aware deployment.*
+- **[Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems](http://arxiv.org/abs/2607.07674v1)**  
+  *Vladislav Beliaev* — Recovers learning signal for the hardest problems in GRPO by prepending correct solution prefixes, preventing frontier examples from being wasted.
 
----
+- **[Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning](http://arxiv.org/abs/2607.07690v1)**  
+  *Vladislav Beliaev* — Grades the entire reasoning trace—not just the answer—by pitting a student against a rival model, training the student to think better rather than simply write more.
 
-### 🤖 Agents & Reasoning (planning, tool use, multi-agent, chain-of-thought)
+- **[RL Post-Training Builds Compositional Reasoning Strategies](http://arxiv.org/abs/2607.07646v1)**  
+  *Azwar Abdulsalam et al.* — Shows that RL post-training can compose primitive skills into new higher-level strategies, beyond merely amplifying latent abilities, in a controlled rewrite-grammar environment.
 
-**5. Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade**
-Link: http://arxiv.org/abs/2607.06503v1
-Authors: Kai Ruan, Zihe Huang, Ziqi Zhou et al.
-*Demonstrates that LLM agent failures are predictable from early internal representations, enabling a lightweight probe cascade to abort doomed trajectories and save substantial inference compute in multi-step tasks.*
+- **[Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops](http://arxiv.org/abs/2607.07663v1)**  
+  *Mingguang Chen et al.* — Surveys the rapidly growing landscape of AI systems that participate in their own improvement, unifying concepts from self-refine to autonomous AI research.
 
-**6. Danus: Orchestrating Mathematical Reasoning Agents with Fact-Graph Memory**
-Link: http://arxiv.org/abs/2607.06447v1
-Authors: Jihao Liu, Guoxiong Gao, Zeming Sun et al.
-*Introduces a fact-graph memory architecture for orchestrating parallel mathematical reasoning agents, addressing the coordination challenge in scaling LLM-based agents for research-level problem solving.*
+### 🔧 Methods & Frameworks
+- **[Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF](http://arxiv.org/abs/2607.07693v1)**  
+  *Eric Zhu et al.* — Dramatically reduces the human-feedback requirement for aligning diffusion models with RLHF by adaptively weighting timesteps and replaying high-advantage transitions.
 
-**7. RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation**
-Link: http://arxiv.org/abs/2607.06527v1
-Authors: Sambaran Bandyopadhyay, Ananth Muppidi
-*Proposes a fully differentiable multi-hop QA pipeline over knowledge graphs using recurrent soft-flow mechanisms that bridge lexical gaps between intermediate nodes and query semantics.*
+- **[FourierQK: Spectral Preprocessing of Query-Key Projections Improves Transformer Attention](http://arxiv.org/abs/2607.07478v1)**  
+  *Athanasios Zeris* — Shows that simple spectral filtering of learned Q/K projections yields substantial gains on character-level language modeling, hinting at a new axis for attention design.
 
-**8. An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery**
-Link: http://arxiv.org/abs/2607.06413v1
-Authors: Hao He, Xueying Liu, Chris J. Kuhlman et al.
-*Applies rigorous experimental design methodology to characterize the stochastic and adaptive behavior of LLM coding agents in open-ended model discovery tasks, going beyond single benchmark evaluations.*
+### 📊 Applications
+- **[MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data](http://arxiv.org/abs/2607.07673v1)**  
+  *Hyunjae Kim et al.* — Converts PubMed Central into a large-scale, high-quality multimodal medical dataset to power the next generation of clinical foundation models.
 
----
+- **[SynthAVE: Scalable Synthetic Labeling for E-Commerce with LLM-Arena Validation](http://arxiv.org/abs/2607.07469v1)**  
+  *Andrea Scarinci et al.* — Proposes a scalable synthetic labeling pipeline validated by an LLM-arena, dramatically reducing the cost of multilingual attribute extraction for thousands of product types.
 
-### 🔧 Methods & Frameworks (new techniques, benchmarks, efficiency improvements)
+## 3. Research Trend Signal
+A major shift is the **deepening of reasoning training from outcome rewards to process rewards**: Agon’s implicit rival grading and Max Out GRPO’s prefix control both insist that *how* a model thinks is as important as the final answer. This process-level supervision is converging with the surge in **agentic self-improvement** surveys and **deployment-centric safety** (Institutional Red-Teaming), creating a picture where the next leap in reliability will come not from larger base models but from iterative, trace-aware training loops and carefully designed operational constraints. Meanwhile, a parallel efficiency wave is visible: post-hoc linearization analysis, Fourier-domain preprocessing, and percentile-aware pruning all aim to keep inference costs manageable as context lengths and reasoning depth grow.
 
-**9. A Definition and Roadmap for World Models**
-Link: http://arxiv.org/abs/2607.06401v1
-Authors: Xinyuan Chen, Haoyu Guo, Shi Guo et al.
-*Provides the first comprehensive definition and unified roadmap for world models across model-based RL, video generation, embodied robotics, and physical AI, establishing a common framework for future research.*
+## 4. Worth Deep Reading
+- **[Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety](http://arxiv.org/abs/2607.07695v1)**  
+  This paper re-frames AI safety from model vulnerabilities to system-level rules. Its causal, minimal-intervention methodology could reshape how we evaluate and govern multi-agent deployments, making it essential reading for anyone building real-world agent swarms.
 
-**10. GraphBU: MILP Instance Generation with Graph-Native Block Units**
-Link: http://arxiv.org/abs/2607.06532v1
-Authors: Xiaolei Guo, Chenyu Zhou, Jianghao Lin et al.
-*Introduces a graph-native block unit approach for generating realistic MILP instances that preserve structural properties solvers and learned policies rely on, addressing a key bottleneck in solver development.*
+- **[Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning](http://arxiv.org/abs/2607.07690v1)**  
+  By grading the reasoning chain via a rival’s perspective, Agon tackles the long-standing problem of training models to think efficiently rather than verbosely. The technique is elegant and may become a standard component in post-training pipelines for hard science and math problems.
 
-**11. EntroPath: Maximum Entropy Path Ensemble Embedding for Manifold Learning**
-Link: http://arxiv.org/abs/2607.06497v1
-Authors: Przemysław Rola
-*Presents a manifold learning method that recovers geodesic geometry through ensembles of diffusion paths, overcoming limitations of both locally normalized random walks and shortest-path distances in graph embeddings.*
-
-**12. ExplAIner: A Declarative Query Language for Explaining Classification Models**
-Link: http://arxiv.org/abs/2607.06407v1
-Authors: Marcelo Arenas, Pablo Barceló, Diego Bustamante et al.
-*Proposes a declarative query language for specifying, combining, and analyzing explanation notions in XAI, bringing data management principles to the fragmented landscape of model interpretability.*
-
----
-
-### 📊 Applications (domain-specific, multimodal, code generation)
-
-**13. RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications**
-Link: http://arxiv.org/abs/2607.06411v1
-Authors: Evgeny Shilov
-*Introduces the first repository-level agentic coding benchmark with native non-English (Russian) task specifications, measuring coding agents' ability to handle real-world maintenance requests in customer-style language.*
-
-**14. Harnessing Code Agents for Automatic Software Verification**
-Link: http://arxiv.org/abs/2607.06341v1
-Authors: Shuangxiang Kan, Shuanglong Kan, Sebastian Ertel
-*Presents a code agent framework that automates formal proof generation in Coq, addressing the scalability bottleneck in interactive theorem proving by leveraging LLMs for proof synthesis.*
-
-**15. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology**
-Link: http://arxiv.org/abs/2607.06531v1
-Authors: Ghassen Marrakchi, Basarab Matei
-*Proposes a model-agnostic orchestration framework that decouples data ingestion, clinical routing, and AI inference in multimodal oncology, enabling scalable and flexible clinical decision support.*
-
----
-
-## Research Trend Signal
-
-A significant trend visible today is the **convergence of compression and reasoning efficiency** in large language models. Three separate papers (DepthWeave-KV, FreqDepthKV, and the early-abort probe cascade) directly address the same core challenge: LLM inference is becoming prohibitively expensive for long-context and multi-step agentic tasks. Rather than pursuing larger models, the community is increasingly focused on **token-adaptive and prediction-based resource allocation** — predicting which computation is necessary before running it. This "predictive efficiency" paradigm extends beyond caching to agent trajectory aborting, suggesting a broader shift toward **inference-time meta-reasoning** as a first-class optimization target.
-
-A second signal is the **maturation of world model research** from fragmented subfield-specific approaches to a unified theoretical framework. The definition and roadmap paper (paper 9) explicitly attempts to consolidate model-based RL, video generation, and robotics under a single conceptual umbrella — a move that may accelerate cross-pollination between these communities.
-
-Finally, **agentic coding benchmarks are expanding beyond English-centric evaluations**. RuBench and the experimental design paper signal that the community recognizes the need for linguistically and methodologically diverse evaluation frameworks that better reflect real-world deployment conditions.
-
----
-
-## Worth Deep Reading
-
-1. **A Definition and Roadmap for World Models** (http://arxiv.org/abs/2607.06401v1) — This paper attempts to unify a fragmented field that spans model-based RL, video generation, and physical AI. If it succeeds in establishing shared terminology and evaluation standards, it could become a foundational reference for years of future work.
-
-2. **Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade** (http://arxiv.org/abs/2607.06503v1) — The practical implications are significant: the ability to abort failing agent trajectories early could reduce inference costs by orders of magnitude in production systems. The methodology (probing internal representations with lightweight classifiers) is elegant and likely generalizable.
-
-3. **Harnessing Code Agents for Automatic Software Verification** (http://arxiv.org/abs/2607.06341v1) — Formal verification is one of the hardest open problems in CS, and LLMs have thus far struggled to produce correct proofs. This paper's agentic approach to proof generation in Coq represents a promising direction that could fundamentally change how we ensure software correctness.
+- **[RL Post-Training Builds Compositional Reasoning Strategies](http://arxiv.org/abs/2607.07646v1)**  
+  Through a clean synthetic environment, this study provides one of the first crisp empirical answers to whether RL post-training induces genuine compositional skill acquisition. Its framework is a powerful lens for understanding the inductive biases of alignment techniques.
 
 ---
 *This digest is auto-generated by [agents-radar](https://github.com/ycsxh/agents-radar).*
