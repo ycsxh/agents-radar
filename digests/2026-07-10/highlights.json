@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.206 新增 /doctor 命令和自动 git push",
+      "OpenAI Codex v0.144.0 发布，新增额度重置功能",
+      "Gemini CLI 支持 AGENTS.md 统一规范",
+      "GitHub Copilot CLI v1.0.70 正式版发布，TUI 假死回归",
+      "DeepSeek TUI v0.8.68 即将发布，集成 xAI/Termux",
+      "Qwen Code v0.19.8-nightly 修复代理死循环"
+    ],
+    "ai-agents": [
+      "24 小时涌现 500 条 Issue 和 500 条 PR，社区高强度迭代",
+      "PR #102264 修复 Codex Computer Use 就绪状态稳定性",
+      "PR #103316 支持 Grok Imagine Video 1.5 视频生成",
+      "修复 OpenAI 兼容提供商流式工具调用被静默丢弃",
+      "大量过时 Issue 被机器人自动关闭，包括 #63918",
+      "项目无新版本发布，但积压压力与长尾修复并行"
+    ],
+    "ai-trending": [
+      "MadsLorentzen/ai-job-search 日增 3716 star，今日最火",
+      "iOfficeAI/OfficeCLI 日增 1929 star，AI 代理 Office 套件",
+      "addyosmani/agent-skills 日增 2554 star，代理技能集",
+      "VoltAgent/awesome-design-md 日增 1391 star，设计基建",
+      "系统提示大规模泄漏项目登热榜，引发安全讨论",
+      "pocket-tts 轻量级 CPU TTS 模型呼应端侧 AI 趋势"
+    ],
+    "ai-web": [
+      "前美联储主席 Ben Bernanke 加入 Anthropic 长期利益信托",
+      "Anthropic 发布双用途知识“关闭开关”安全研究",
+      "Claude 推出使用反思功能，直接面向用户",
+      "UST 将 Claude 嵌入半导体、汽车等物理 AI 流程",
+      "OpenAI URL 暗示 GPT-5.6 与 Microsoft 365 优先模型",
+      "Golden Gate Claude 可解释性特征再度曝光，铺垫安全认知"
+    ],
+    "ai-hn": [
+      "GPT-5.6 发布帖 1122 分 812 评论，社区爆发讨论",
+      "GLM 5.2 记账基准接近人类准确率，获 193 分",
+      "OpenAI 与纽约时报诉讼出现隐藏证据指控",
+      "OpenAI 二号人物离职，ChatGPT Atlas 浏览器停用",
+      "Show HN：逆向工程 Web 应用为智能体可调用工具",
+      "Anthropic 双用途知识关闭开关研究，前美联储主席加入信托"
+    ],
+    "ai-arxiv": [
+      "提出主动记忆 Agent，解决长时任务关键信息淹没",
+      "OpenCoF 用视频生成取代传统思维链推理",
+      "WebSwarm 递归多 Agent 编排，实现深度广域搜索",
+      "量化模型行为发生偏移，困惑度无法反映真实变化",
+      "揭示超级权重选择性训练反而损害模型性能",
+      "UltraX 可编程编辑精炼预训练数据，提升模型质量"
+    ],
+    "ai-hf": [
+      "GLM-5.2 获 3.7k 点赞 36.2 万下载，成热度最高模型",
+      "NVIDIA LocateAnything-3B 通用检测 144 万下载",
+      "百度 Unlimited-OCR 全能识别 124 万下载",
+      "未审查版 Qwen3.6-35B-A3B 下载量高达 270 万",
+      "DeepSeek-V4-Pro-DSpark 专业增强版发布，459 赞",
+      "Hugging Face 进入一超多强迭代期，多模态齐飞"
+    ],
+    "ai-community": [
+      "Stratagems #9：AI 供应商日志对抗，双方都不干净",
+      "手写代码并不比 AI 生成更诚实，引发 36 条评论",
+      "确定性路由+采样替代 LLM 质量门，8 赞",
+      "资深工程师拒绝使用 AI 或将变成初级，激烈争议",
+      "AI 代理需要收据，5 赞强调追加式事件日志",
+      "Grok 4.5 的 $6 输出价格才是真实故事，引发算账"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.206 shipped",
+      "OpenAI Codex rust v0.144.0 + hotfix",
+      "Gemini CLI v0.52.0 nightly released",
+      "AGENTS.md cross-tool standard emerges",
+      "Multi-agent orchestration now the norm",
+      "Subagent security under intense scrutiny"
+    ],
+    "ai-agents": [
+      "500 issues, 500 PRs in 24 hours",
+      "Silent subagent completion loss bugs",
+      "Session hangs flagged as P1 severity",
+      "Codex Computer Use stabilisation merged",
+      "Strong community contribution pace",
+      "No new releases in last 24h"
+    ],
+    "ai-trending": [
+      "ai-job-search rockets to +3716 stars",
+      "agent-skills codifies coding agent best practices",
+      "OfficeCLI gives agents Office file manipulation",
+      "claude-video adds video to Claude tools",
+      "System prompts leak sparks community interest",
+      "ECC harness optimizes agents with 227k stars"
+    ],
+    "ai-web": [
+      "Anthropic: UST brings Claude to physical AI",
+      "Ben Bernanke joins Anthropic oversight trust",
+      "Knowledge off-switch dual-use safety paper",
+      "Claude usage-reflection feature launched",
+      "OpenAI hints at GPT-5/6 generation",
+      "OpenAI bio-safety bug-bounty program indexed"
+    ],
+    "ai-hn": [
+      "GPT-5.6 surprise launch dominates discussion",
+      "NYT accuses OpenAI of hiding billions of logs",
+      "GLM 5.2 nearly as accurate as human bookkeeper",
+      "Anthropic adds Bernanke to oversight",
+      "Devthropology tool for GitHub repo insights",
+      "ARC-AGI deep-dive on GPT-5.6 reasoning"
+    ],
+    "ai-arxiv": [
+      "UniClawBench benchmarks proactive real-world agents",
+      "IdeaGene-Bench tests scientific lineage reasoning",
+      "OpenCoF uses video generation as reasoning pathway",
+      "Quantization behavioral degradation exposed",
+      "Super-weights not as universal as assumed",
+      "BiSCo-LLM enables extreme low-bit compression"
+    ],
+    "ai-hf": [
+      "Qwen3.6 GGUF variants pull millions of downloads",
+      "DeepSeek V4 Pro and Flash versions trend",
+      "Tencent Hy3 open-weight LLM debuts",
+      "GLM-5.2 MoE-DSA model rapidly adopted",
+      "Leanstral-1.5 119B MoE for efficient inference",
+      "Krea-2 Turbo expands text-to-image ecosystem"
+    ],
+    "ai-community": [
+      "Devs push back on AI 'slop' narrative",
+      "‘Hand-typed slop isn’t honest, just slower’ post",
+      "AI-driven code review exhausting humans",
+      "Google’s climate impact debate ignites",
+      "Senior devs refusing AI tools become juniors",
+      "Agent reliability over LLM quality gates focus"
+    ]
+  }
+}
