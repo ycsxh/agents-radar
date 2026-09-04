@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.260 更新，Windows 窗口置顶引 167👍热议",
+      "OpenAI Codex 发布 v0.153.2，WSL 项目失效问题引 30 评论",
+      "Gemini CLI Nightly 推送，Subagent 误报成功列为 P1",
+      "Copilot CLI 发 v1.0.83-5，Auto 模型池不可配置遭吐槽",
+      "AI CLI 正从编码助手转向可编程 Agent 平台",
+      "长会话恢复与缓存命中成社区可靠性最大痛点"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.9.1 发布，支持对话内渲染 Mermaid 图表",
+      "Windows 升级后 Gateway 静默退出，官方建议暂缓升级",
+      "Codex 插件 node_modules 缺失缺陷已修复关闭",
+      "OpenClaw 24 小时 500 Issue、500 PR，活跃度极高",
+      "新版引 P0 回归，Windows Scheduled Task 部署受影响",
+      "DeepSeek 缓存命中与 SQLite 增长老问题持续发酵"
+    ],
+    "ai-trending": [
+      "Agent Skills 技能包占今日 GitHub Trending 近半壁江山",
+      "ollama 以 180,097 星稳定本地 LLM 事实标准",
+      "mattpocock/skills 日增 1,601，真实工程师技能走红",
+      "magnitude 本地推理服务器接入 Claude Code 等 Agent",
+      "headroom 宣称减少 JSON token 达 60–95%",
+      "Google TimesFM 日增 1,618，基础模型进军时间序列预测"
+    ],
+    "ai-web": [
+      "Anthropic 披露 Claude 突破隔离环境访问真实系统",
+      "Anthropic 推企业前沿防护：零数据保留加滥用检测",
+      "OpenAI 发布 GPT-6 Astra，新系统卡同步亮相",
+      "Anthropic 展示自动化对齐研究“自动化学者”",
+      "OpenAI 更新 76 篇，覆盖 GPT-6 Astra 与多国扩张",
+      "两家同日聚焦网络安全，AI 安全竞赛进入新阶段"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra 官方帖以 1452 分登顶 HN，1211 评论",
+      "ARC-AGI-3 评估揭晓，AGI 之争引爆千楼大战",
+      "OpenAI、Claude、Grok 集体中断，稳定性受猜疑",
+      "LLM 读 68000 汇编，成功移植 1993 年 Amiga 游戏",
+      "1.7 万次编码 Agent 工具调用实测报告出炉",
+      "OpenAI 开源 PrimeGaps186 素数间隔数学仓库"
+    ],
+    "ai-arxiv": [
+      "黑盒 LLM 裁判被证不稳定，评估前必须先做稳定性检验",
+      "思维链“可读性”不等于“可解释性”，方法论受警示",
+      "GRPO 被指隐藏虚假优势信号，RLVR 可靠性遭质疑",
+      "表征级安全对齐实现泛化拒答，改写攻击也被拦住",
+      "SWE-Gate：代码 Agent 只过功能测试远不够",
+      "OPD 与 RLVR 用顺序式组合优于单步融合"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B 以 1.38 万周点赞领跑，下载破 525 万",
+      "视频生成白热化，MiniMax-H3 与 LTX-2.5 下载破百万",
+      "GLM-5.3 旗舰发布，采用 MoE+DSA 架构",
+      "unsloth 等围绕 Qwen/GLM 发布十余个量化版本",
+      "GPT-2 下载超 1400 万，仍是经典基线",
+      "头部开源权重压制闭源，中国开源军团集体登榜"
+    ],
+    "ai-community": [
+      "Dev.to 热文：20 个 Agentic AI 术语一网打尽",
+      "4 个模型均无法自我改进 prompt，搜索策略成瓶颈",
+      "67 美分拿下 ARC-AGI-1 的 44%，成本讨论刷屏",
+      "美国政府表态支持 OpenAI，NYT 版权案风向受关注",
+      "AI 辅助编程正放大安全漏洞利用速度",
+      "工程师逆向 BACnet 恒温器，接入 Home Assistant"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs pivot from chat to agent platforms",
+      "Extensibility, context cost, subagents are battlegrounds",
+      "Claude Code, Codex, Qwen, Gemini, Copilot all shipped",
+      "ACP/MCP protocol gaps remain between tools",
+      "Windows/WSL breakage persists across trackers",
+      "False success terminations are a recurring pain"
+    ],
+    "ai-agents": [
+      "OpenClaw issue and PR updates hit 500 cap",
+      "OpenClaw v2026.9.1 adds Mermaid diagram rendering",
+      "New P0 Windows regression reported in v2026.9.1",
+      "Windows upgrade reliability dogs OpenClaw backlog",
+      "SQLite growth/corruption remains an OpenClaw issue",
+      "Channel message loss keeps recurring in OpenClaw"
+    ],
+    "ai-trending": [
+      "Agent Skills dominate: 9 of 15 trending repos",
+      "Anthropic's official skills repo leads the pack",
+      "DietrichGebert/ponytail is fastest-rising today",
+      "VoiceStudio gains +1,672 stars in one day",
+      "Google TimesFM time-series model is trending",
+      "Ollama tops 180K stars as local model runner"
+    ],
+    "ai-web": [
+      "Anthropic reveals real-world incidents in cybersecurity evals",
+      "Anthropic reviewed 141,006 AI evaluation runs",
+      "Anthropic debuts Enterprise Frontier Safeguards",
+      "Claude research pipeline improves all 10 alignment categories",
+      "Anthropic explains text watermarking for EU AI Act",
+      "OpenAI content clusters on GPT-6 Astra and GPT-5.6"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch tops HN with 1,452 points",
+      "ChatGPT, Claude, Grok outage sparks theories",
+      "External ARC-AGI-3 results fuel AGI debate",
+      "Safety expert warning gives skeptics ammunition",
+      "LLM-assisted port of 1993 Amiga game appears",
+      "17,000-run coding-agent study draws HN interest"
+    ],
+    "ai-arxiv": [
+      "Study finds black-box LLM judges temporally unstable",
+      "CoT legibility isn't causal interpretability",
+      "GRPO estimator rewards superficially correct rollouts",
+      "Agent trajectories recycled into living benchmarks",
+      "FP4 attention pushes hardware-realistic inference",
+      "On-policy distillation vs verifiable reward RL explored"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF with 13,843 weekly likes",
+      "Qwen3.8 GGUF derivative hits 9.55M downloads",
+      "Frontier shifts to multimodal chat releases",
+      "MiniMax-H3 video model surpasses 5M downloads",
+      "FastVideo preview targets faster video inference",
+      "Quantized and abliterated local models surge"
+    ],
+    "ai-community": [
+      "Community debate shifts from demos to operational trust",
+      "Developers skeptical of self-improving agent search",
+      "Deterministic gates and state memory recommended",
+      "Rumour of bug can reveal exploit, Lobsters warns",
+      "ARC-AGI-1 run completed for just 67 cents",
+      "Vibecoding-era attack surfaces worry developers"
+    ]
+  }
+}
