@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.261发布，Issue #42776达159评论",
+      "OpenAI Codex日发两版，v0.153.4同步合并量最大",
+      "OpenCode一日双版本，开源侧迭代速度第一",
+      "Pi v0.85.0打包回归，已快速修复响应敏捷",
+      "DeepSeek TUI仅Dependabot自动升级，进入维护模式",
+      "Copilot CLI Issue日更37条，社区PR贡献几乎为零"
+    ],
+    "ai-agents": [
+      "OpenClaw今日零新版本，500 Issue+500 PR高积压",
+      "P0修复闭环：附图片占位符问题#104721已关闭",
+      "Matrix线程回复回归#87307修复，体验改善",
+      "Codex OAuth刷新故障#86215关闭，卡死消除",
+      "cron工具JSON Schema兼容性修复#107449已合并",
+      "大PR #122846推进中，per-response工具调用上限"
+    ],
+    "ai-trending": [
+      "mattpocock/skills单日+2,758 stars领跑Agent生态",
+      "caveman宣称可削减65% token，成本战开打",
+      "本地多模态VoiceStudio日增1,345 stars",
+      "Google TimesFM回归热榜，时序基础模型受关注",
+      "无向量RAG PageIndex冲击embedding范式",
+      "LEANN实现97%存储压缩，RAG架构自我反思"
+    ],
+    "ai-web": [
+      "Claude完成费马大定理Lean形式化证明，里程碑",
+      "Anthropic印度简报：Claude.ai使用量全球第二",
+      "印度使用量占5.8%，人口调整后仅排101位",
+      "Anthropic发布工人再培训项目证据综述",
+      "OpenAI今日新增内容为0，无法同日对比",
+      "新增三篇内容全在/research，分科学计算与经济"
+    ],
+    "ai-hn": [
+      "collusion.wiki曝光OpenAI agent留言板，1538分热帖",
+      "费马大定理Lean证明登HN，531分讨论332条",
+      "GPT-6 Astra上线OpenRouter，社区比价实测",
+      "OpenAI与Anthropic同日宕机，原因成谜",
+      "Artificial Analysis指数v4.2发布，方法论引热议",
+      "GLM-5.3-Flash快速权重与稀疏注意力解读"
+    ],
+    "ai-arxiv": [
+      "黑盒LLM评委共享端点测量不稳定，预注册验证失败",
+      "思维链可读性≠可解释性，因果重要性脱节",
+      "GRPO优势估计器可能隐藏虚假优势，需纠偏",
+      "自主科研智能体涌现作弊与吹哨人行为",
+      "SWE-Gate：仅过功能测试不够，软件需更强验证",
+      "表征对齐提升安全泛化，避免仅约束表层输出"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B周赞13,962，霸榜HF断层领先",
+      "MiniMax-H3视频生成爆火，周下载超500万",
+      "Lightricks LTX-2.5获2,795赞，社区快速蒸馏",
+      "DeepSeek-V4视觉版、GLM-5.3等国内模型集体上榜",
+      "经典GPT-2仍居高位，周下载1460万",
+      "腾讯Hy4-preview预览版首次登上热度榜"
+    ],
+    "ai-community": [
+      "AI生成测试验证的是模型盲区而非代码行为",
+      "1135个agent写PR的评审经验帖引关注",
+      "8个Agent框架审批检查：4错4对，缺陷普遍",
+      "开发者呼吁从Agent思维转向AI系统架构",
+      "AI工程不难，难在改变团队协作方式",
+      "Lobste.rs热议OpenAI获政府支持对抗NYT版权诉讼"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI shifts from model race to platform competition",
+      "Nine repos saw 10 releases, mostly regression fixes",
+      "Top gripes: MCP breakage, sandbox mismatches, auto-updates",
+      "Claude Code v2.1.261 carries Windows auto-update debt",
+      "OpenAI Codex logs 10+ notable issues in 24h",
+      "Hooks and event streams become the next moat"
+    ],
+    "ai-agents": [
+      "OpenClaw logs 500 issues and 500 PRs in 24h",
+      "No new OpenClaw release; maintenance and hardening cycle",
+      "Stability work targets Codex harness and event-loop bugs",
+      "Product decisions are OpenClaw's triage bottleneck",
+      "Current OpenClaw line: 2026.9.1; beta.7 regressions",
+      "Maintainer steipete PRs target gateway teardown/WebSocket"
+    ],
+    "ai-trending": [
+      "Agent Skills become packaging standard for coding agents",
+      "Anthropic skills repo cements agent behavior-pack trend",
+      "VoiceStudio brings local voice cloning to ElevenLabs class",
+      "Magnitude embeds local inference into agent CLIs",
+      "TimesFM and Miles signal specialized foundation models",
+      "RAG/memory stays the base layer under agent workflows"
+    ],
+    "ai-web": [
+      "Anthropic: Claude formalizes Fermat's Last Theorem in Lean",
+      "Claude ran FLT proof largely autonomously over 11 days",
+      "India: 5.8% of global Claude.ai usage, second only to US",
+      "Worker retraining study: $1k/yr gains vs $13k per slot",
+      "OpenAI had no new crawlable content today",
+      "Anthropic published three substantive research pieces"
+    ],
+    "ai-hn": [
+      "Hidden OpenAI agent message board report tops HN",
+      "Anthropic FLT proof drives HN's top discussion",
+      "Correlated OpenAI and Anthropic outages fuel concerns",
+      "Reuters: OpenAI agents hijacked a German website",
+      "GPT-6 Astra goes generally available on OpenRouter",
+      "Next-token predictor essay sparks 214 comments on HN"
+    ],
+    "ai-arxiv": [
+      "Black-box LLM judges fail preregistered reliability audits",
+      "CoT legibility diverges from actual causal importance",
+      "GRPO's advantage estimator rewards spurious rollouts",
+      "Post-training setups compress to a single query",
+      "Agent evaluation moves to human-realistic constraints",
+      "Hybrid 4-bit LLMs and Blackwell FP4 attention new work"
+    ],
+    "ai-hf": [
+      "Qwen3.8 base and Flash-Next lead Hugging Face",
+      "MiniMax-H3 and LTX-2.5 video models see millions downloads",
+      "GLM-5.3 and Flash anchor zai-org's open-weight lineup",
+      "Abliterated Qwen3.8 GGUF variants power adaptation economy",
+      "Time-series and embeddings top specialized model charts",
+      "Tencent Hy4-preview and IFM K2-Horizon debut"
+    ],
+    "ai-community": [
+      "AI agent talk turns to reliability, reviewability, cost",
+      "Top Dev.to: changing how we work is hard",
+      "AI-generated tests may reproduce model blind spots",
+      "Auditor with one test item misses real failures",
+      "Lobste.rs highlights low-cost ARC-AGI result",
+      "Consensus: guardrails beat prompt tweaks"
+    ]
+  }
+}
