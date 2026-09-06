@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 维护版 v2.1.263：子代理继承父级工具引发争议",
+      "OpenAI Codex 高活跃，Issue/PR 双十上榜",
+      "Gemini CLI Subagent 超限误报成功，generalist 挂起重现",
+      "Qwen Code 一日连发 3 个版本，实力抢镜",
+      "Pi 发布 v0.85.1，远程/移动端协同成重点",
+      "CodeWhale 发布 v0.9.12，原 DeepSeek TUI 更名引关注"
+    ],
+    "ai-agents": [
+      "OpenClaw 发 v2026.9.2，Gateway 卡顿修复上线",
+      "一天 500 Issue 500 PR：OpenClaw 生态疯狂刷屏",
+      "224 条 PR 合并，仍有 276 条待处理",
+      "P1/P0 Bug 积压，crash-loop 与消息丢失预警",
+      "clawsweeper 标签泛滥，高价值问题等维护者",
+      "13 个项目同场，OpenClaw 生态日报信息量巨大"
+    ],
+    "ai-trending": [
+      "Agent Skills 大爆发：anthropics/skills 等齐登榜",
+      "ponytail 日增 2845 star，登顶热榜第一",
+      "magnitude 让本地模型直连 Claude Code，形成新闭环",
+      "ollama 以 180k star 继续巩固模型底座",
+      "mattpocock/skills 专为真实工程师设计，抢眼",
+      "RAG 转向长期记忆，claude-mem、mem0、cognee 升温"
+    ],
+    "ai-hn": [
+      "认知病毒论文 207 分刷屏，隐喻之争两极化",
+      "GPT-6 Astra 机械臂演示，域名来源遭质疑",
+      "OKF Agent Memory 用 Git 做记忆，获开发者青睐",
+      "OpenLake 自曝击败 MLPerf，但仅 1 条评论待验证",
+      "Anthropic 遭公关与审查双重争议，信任下滑",
+      "HN 最高分非 AI：联合国气候报告以307分居首"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B 周赞破 1.4 万，成今日顶流",
+      "DeepSeek-V4-Flash-Vision-Exp 上线，多模态加速",
+      "GLM-5.3 MoE 架构亮相，周赞 1720",
+      "MiniMax-H3、LTX-2.5 点燃视频生成热度",
+      "GPT-2/BERT 下载量千万级，经典小模型仍是刚需",
+      "Flash/Next/Exp 命名扎堆，开源模型进入快速迭代期"
+    ],
+    "ai-community": [
+      "为什么多数 AI Agent 在生产环境会失败？热文拆解",
+      "RAG 被批解决错误问题，真正的可靠性靠什么",
+      "角色分离也拦不住奖励攻击，AI 自改写要约束",
+      "ToT+MCTS 让模型多次思考，推理质量大提升",
+      "Vibe Coding 易，独立赚钱难，冷启动运维是坎",
+      "4B 模型胜 Opus，却公开基准垫底，反差来了"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.263 and Pi v0.85.1 ship",
+      "Subagent correctness top complaint across AI CLIs",
+      "MCP argument corruption and poisoned servers reported",
+      "Release engineering struggles: broken npm tarballs",
+      "CodeWhale v0.9.12 and Qwen Code preview released",
+      "Multi-agent workflows mainstreaming in coding CLIs"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.9.2 improves chat responsiveness",
+      "OpenClaw had 500 issues and 500 PRs in 24h",
+      "123 issues closed and 224 PRs merged today",
+      "OpenClaw reliability PRs led by steipete",
+      "Message-loss and duplicate-delivery bugs remain P1/P0",
+      "Gateway event-loop blocking targeted in new release"
+    ],
+    "ai-trending": [
+      "Agent skills repos dominate GitHub trending today",
+      "anthropics/skills and mattpocock/skills surge",
+      "Magnitude +674: local inference for coding agents",
+      "Focus shifts from model releases to agent harnesses",
+      "Ollama adds Kimi K2.6 and GLM-5.2 support",
+      "Model access commoditized; skills and memory differ"
+    ],
+    "ai-hn": [
+      "'LLMs as cognitive virus' paper: 207 pts, 173 comments",
+      "Anthropic hits lyric refusals and censorship backlash",
+      "OpenAI accused of boosting Astra eval metrics",
+      "GPT-6 Astra robot-arm demo draws skepticism",
+      "Two largest US school districts impose AI moratoriums",
+      "Moody's warns banks about tech AI reliance"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops with 14K likes, 6M downloads",
+      "A third of trending models are Qwen3.8 variants",
+      "Flash vision models ship from DeepSeek and GLM",
+      "MiniMax-H3 and LTX-2.5 lead video momentum",
+      "TimesFM-3.0 and Breeze-TTS-2 show vertical reach",
+      "GLM-5.3 and K2-Horizon MoVA gain traction"
+    ],
+    "ai-community": [
+      "Dev.to asks why AI agents fail in production",
+      "Greedy metrics improved while pass@64 collapsed",
+      "4B model beats Claude Opus privately, ranks last publicly",
+      "ARC-AGI-1 44% achieved for 67 cents",
+      "GPT-6 Astra, Claude Sonnet 4.5, Mistral Small 3.2 launch",
+      "Lobste.rs: US backs OpenAI against New York Times"
+    ]
+  }
+}
