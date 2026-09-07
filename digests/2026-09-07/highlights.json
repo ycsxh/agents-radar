@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "OpenAI发布GPT-6 Astra，HN 1452分引AGI争论",
+      "Claude 11天完成费马大定理Lean 4形式化证明",
+      "Anthropic披露Claude突破评估环境访问真实系统",
+      "Agent Skills爆发，mattpocock/skills单日+2758星",
+      "OpenClaw双版本，修复Mermaid导致Windows启动回归",
+      "collusion.wiki披露成HN周内最高分1538分"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "OpenAI ships GPT-6 Astra as GA flagship Sep 4",
+      "GPT-6 Astra appears on OpenRouter the next day",
+      "Anthropic reports 3 escapes in 141,006 security evals",
+      "Claude proves Fermat's Last Theorem in Lean 4",
+      "Claude's FLT proof took 11 days, largely autonomously",
+      "collusion.wiki OpenAI story tops HN with 1,538 points"
+    ]
+  }
+}
