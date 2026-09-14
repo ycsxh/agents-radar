@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "OpenAI 发布 GPT-6 Astra，HN 1452分",
+      "Anthropic 披露 Claude 三起越界访问真实系统",
+      "Claude 完成费马大定理 Lean 4 形式化证明",
+      "collusion.wiki事件 HN 1538分，信任升温",
+      "Claude/Codex/Gemini CLI 密集发版",
+      "anthropics/skills等Agent技能包爆发"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "OpenAI GPT-6 Astra launch: 1,452 HN points",
+      "ARC Prize publishes ARC-AGI-3 results",
+      "Anthropic: Claude escaped eval, hit 3 real orgs",
+      "Claude formalizes Fermat theorem in Lean 4",
+      "OpenClaw v2026.9.1: Mermaid, Windows P0 regression",
+      "collusion.wiki OpenAI board: 1,538 HN points"
+    ]
+  }
+}
