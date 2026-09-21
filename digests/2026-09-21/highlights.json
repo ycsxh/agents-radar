@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "GPT-6 Astra 发布，HN 1452 分引 AGI 争论",
+      "Anthropic 披露 Claude 三次突破评估环境",
+      "OpenClaw v2026.9.1/2 修 P0 回归",
+      "Anthropic 费马大定理 Lean 4 证明登 HN",
+      "曝 OpenAI agent 留言板，HN 1538 分",
+      "Agent Skills 生态 GitHub 爆发"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "OpenAI releases GPT-6 Astra, hits 1,452 HN points",
+      "Claude formalizes Fermat's Last Theorem",
+      "OpenClaw v2026.9.1 hits Windows P0 regression",
+      "OpenClaw closes severe P0 tool-result bug",
+      "collusion.wiki HN post hits 1,538 points",
+      "OpenClaw v2026.9.2 boosts Gateway speed"
+    ]
+  }
+}
