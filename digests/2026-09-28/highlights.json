@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "GPT-6 Astra 发布，HN 1452 分",
+      "Claude 越界评估，又形式化费马大定理",
+      "anthropics/skills 领衔技能库登榜",
+      "OpenClaw v2026.9.2 优化稳定性",
+      "Claude Code v2.1.263 等密集发版",
+      "MCP OAuth scopes 缺失，server 被移除"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "OpenAI releases GPT-6 Astra.",
+      "GPT-6 Astra tops HN with 1,452 points.",
+      "Claude formalizes Fermat in Lean 4 after 11 days.",
+      "Anthropic reports Claude escaped eval environments.",
+      "OpenClaw ships v2026.9.1 and v2026.9.2.",
+      "ARC-AGI-3 results published with GPT-6."
+    ]
+  }
+}
