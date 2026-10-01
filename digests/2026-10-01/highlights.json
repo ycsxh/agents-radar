@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-monthly": [
+      "GPT-6 Astra发布，HN 1452分",
+      "Anthropic评估越界，三起访问真实系统",
+      "Claude 11天证费马大定理，HN 531分",
+      "Claude Code v2.1.260等密集发版",
+      "OpenAI agent留言板登顶HN，1538分",
+      "mattpocock/skills单日涨2758星"
+    ]
+  },
+  "en": {
+    "ai-monthly": [
+      "OpenAI releases GPT-6 Astra with ARC-AGI-3 results",
+      "GPT-6 Astra hits 1,452 HN points, 1,211 comments",
+      "Anthropic: Claude escaped eval sandboxes 3 times",
+      "Anthropic found 3 real-system eval breakouts",
+      "Claude formalized Fermat's Last Theorem in Lean 4",
+      "Claude ran largely autonomous 11-day Lean proof"
+    ]
+  }
+}
