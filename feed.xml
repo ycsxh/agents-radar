@@ -6,7 +6,302 @@
     <description>AI 开源生态每日简报 · Daily AI ecosystem digest</description>
     <language>zh-CN</language>
     <atom:link href="https://duanyytop.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 01 Oct 2026 08:32:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 06:23:44 +0000</lastBuildDate>
+    <item>
+      <title>AI 工具生态周报 2026-10-05</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-10-05/ai-weekly</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-10-05/ai-weekly</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>AI 工具生态周报 2026-W41 覆盖日期: 2026-09-05 ~ 2026-10-01 | 生成时间: 2026-10-05 06:22 UTC AI 工具生态周报（2026-W41） 数据说明：本报告综合 2026-09-05～09-06 每日摘要及部分回溯至 09-04 的信息，覆盖 AI CLI、OpenClaw 生态、GitHub Trending、Hacker News 与官方动态。 1. 本周要闻 09-04 / 09-05 Anthropic 宣布 Claude 形式化费马大定理Claude 在 11 天内较大程度自主地用 Lean 4 完成费马大定理形式化证明，HN 讨论 531 分 / 332 评，被视为 AI for Math 与长周期 Agent 任务的标志性进展。 09-05 HN 爆出“新的 OpenAI agent 留言板”事件collusion.wiki 相关帖以 1538 分 / 1229 评成为全站焦点，社区对 Agent 安全、透明度和实验室信任的讨论急剧升温。 09-05～09-06 Agent Skills 生态爆发mattpocock...</description>
+      <content:encoded><![CDATA[<h1>AI 工具生态周报 2026-W41</h1>
+<blockquote>
+<p>覆盖日期: 2026-09-05 ~ 2026-10-01 | 生成时间: 2026-10-05 06:22 UTC</p>
+</blockquote>
+<hr>
+<h1>AI 工具生态周报（2026-W41）</h1>
+<blockquote>
+<p>数据说明：本报告综合 2026-09-05～09-06 每日摘要及部分回溯至 09-04 的信息，覆盖 AI CLI、OpenClaw 生态、GitHub Trending、Hacker News 与官方动态。</p>
+</blockquote>
+<hr>
+<h2>1. 本周要闻</h2>
+<ol>
+<li><p><strong>09-04 / 09-05 Anthropic 宣布 Claude 形式化费马大定理</strong><br>Claude 在 11 天内较大程度自主地用 Lean 4 完成费马大定理形式化证明，HN 讨论 531 分 / 332 评，被视为 AI for Math 与长周期 Agent 任务的标志性进展。</p>
+</li>
+<li><p><strong>09-05 HN 爆出“新的 OpenAI agent 留言板”事件</strong><br>collusion.wiki 相关帖以 1538 分 / 1229 评成为全站焦点，社区对 Agent 安全、透明度和实验室信任的讨论急剧升温。</p>
+</li>
+<li><p><strong>09-05～09-06 Agent Skills 生态爆发</strong><br><code>mattpocock/skills</code> 单日 +2,758 stars，<code>anthropics/skills</code>、<code>humanlayer/skills</code>、<code>ECC</code>、<code>ruflo</code> 等集体登榜，Skills 正成为 Agent 生态的可分享、可组合单元。</p>
+</li>
+<li><p><strong>09-06 OpenClaw 发布 v2026.9.2</strong><br>重点优化 Gateway 事件循环与聊天/仪表盘响应，解决长会话、大磁盘数据下的 UI 阻塞。但此前 09-05 无版本发布，P0/P1 积压明显。</p>
+</li>
+<li><p><strong>09-05～09-06 AI CLI 密集发版</strong><br>Claude Code 从 v2.1.261 到 v2.1.263；Codex v0.153.4/v0.153.3；Copilot CLI v1.0.84-1/0；OpenCode v1.18.29/28；Pi v0.85.1；Qwen Code 3 个版本；CodeWhale v0.9.12；Gemini CLI nightly 持续推进。</p>
+</li>
+<li><p><strong>09-05 GPT-6 Astra 上线 OpenRouter / GA</strong><br>HN 讨论 147 分 / 77 评；09-06 又出现“GPT-6 Astra on robot arms”演示，但因来源非官方受到质疑。新模型正对 CLI 路由、配额和模型可见性形成压力。</p>
+</li>
+<li><p><strong>09-05 OpenAI / Anthropic 同日宕机，信任议题升温</strong><br>社区对头部实验室的公关、审查、稳定性与透明度明显更敏感；Anthropic 同时面临“花钱做公关”和“过度审查”争议。</p>
+</li>
+<li><p><strong>09-05 上下文与 token 成本成为新战场</strong><br>Spotify Portal 宣称削减 Claude Code token 使用 90%；<code>caveman</code> 宣称削减 65% token；<code>ECC</code> 把 Agent harness 性能当系统工程。开发者关注点从“能不能跑”转向“成本、可信、可交付”。</p>
+</li>
+</ol>
+<hr>
+<h2>2. CLI 工具进展</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>版本/活跃度</th>
+<th>本周关键变化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong></td>
+<td>v2.1.261 → v2.1.263</td>
+<td>成熟期社区，Issue 深度讨论高。Windows 孤儿进程文件锁 #42776 达 159 评论；静默更新无法重启；<code>bypassPermissions</code> 回归；子代理继承父级 system prompt/工具；HTTP MCP 假连接；跨机器同步 <code>~/.claude/</code>、Remote Control session。</td>
+</tr>
+<tr>
+<td><strong>OpenAI Codex</strong></td>
+<td>v0.153.4 / v0.153.3；09-06 无 Release</td>
+<td>高活跃，10 Issues + 10 PR。Windows EFS 插件失败、WSL 路径崩溃；MCP OAuth 动态客户端注册未携带 scopes，远程 MCP 登录失败。</td>
+</tr>
+<tr>
+<td><strong>Gemini CLI</strong></td>
+<td>v0.60.0-nightly.20260906</td>
+<td>P1 Bug 批量进入 need-retesting。Subagent 达到 MAX_TURNS 被误报 <code>GOAL success</code>；generalist agent 无限挂起；MCP prompt 被 JSON 编码破坏引号/换行；环境变量注入需 consent。</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot CLI</strong></td>
+<td>v1.0.84-1 / v1.0.84-0；09-06 无 PR/Release</td>
+<td>Issue 流量高但社区 PR 几乎为零，平台整合期。自动更新覆写桌面 exe；ACP 模式静默自动批准；<code>agentStop</code> 在子 agent 回合误触发导致 <code>/review</code> 永不结束；<code>tools/list</code> 超时后 server 工具被永久移除。</td>
+</tr>
+<tr>
+<td><strong>Kimi Code CLI</strong></td>
+<td>低活跃</td>
+<td>仅少量 Issue/PR；Ctrl+V 失效。</td>
+</tr>
+<tr>
+<td><strong>OpenCode</strong></td>
+<td>v1.18.29 / v1.18.28</td>
+<td>一日双版本 + 10 PR，开源侧迭代速度第一。大文本粘贴崩溃；WebChat Agent 出现“自问自答”幻觉式执行。</td>
+</tr>
+<tr>
+<td><strong>Pi</strong></td>
+<td>v0.85.0 → v0.85.1</td>
+<td>发布后出现打包回归并快速修复，响应敏捷。</td>
+</tr>
+<tr>
+<td><strong>Qwen Code</strong></td>
+<td>3 个版本（2 nightly + 1 preview）</td>
+<td>P1 修复当天提交：Cerebras 400、HTML 导出；桌面端持久化 <code>mcp_config</code> 重启后不自动加载。</td>
+</tr>
+<tr>
+<td><strong>DeepSeek TUI / CodeWhale</strong></td>
+<td>v0.9.12</td>
+<td>5 Issues、13 PR，多为 Dependabot。Fleet 中被取消/暂停 Agent 永久占用写权限，形成并行写锁死锁。</td>
+</tr>
+</tbody></table>
+<p><strong>横向共性</strong>：Windows 桌面/终端可靠性、权限审批一致性、沙箱安全、MCP 稳定性、长会话状态不可信、Subagent 生命周期与终止语义，是本周最集中的痛点。</p>
+<hr>
+<h2>3. AI Agent 生态</h2>
+<p><strong>OpenClaw 主线</strong>  </p>
+<ul>
+<li><strong>09-05</strong>：500 Issues / 500 PR，无新版本。P0/P1 仍密集，<code>crash-loop</code>、<code>message-loss</code>、会话状态异常持续。已关闭长期问题：工具结果返回 <code>(see attached image)</code> 占位符、Matrix 线程回复回归、Codex OAuth 刷新故障、cron JSON Schema 兼容性。  </li>
+<li>热点：<code>#91009</code> Codex PreToolUse hook 进程 CPU 100%+ 导致 Gateway RPC 停滞，21 评论；<code>#48003</code> Steer 模式无法在 turn 中途注入消息，20 评论。  </li>
+<li><strong>09-06</strong>：发布 <strong>v2026.9.2</strong>，优化聊天/仪表盘响应与 Gateway 事件循环。500 Issues（123 关闭）、500 PR（224 合并/关闭）。<code>clawsweeper:needs-product-decision</code>、<code>needs-maintainer-review</code>、<code>no-new-fix-pr</code> 高频出现，维护者决策成为瓶颈。  </li>
+<li>代表性 PR：Android cron interval 复用、插件模型目录查询加速、onboarding 认证重构；待合并 <code>#139394 [P0]</code> 恢复队列消息。</li>
+</ul>
+<p><strong>Claw 生态圈</strong><br>覆盖 13 个项目：NanoBot、Hermes Agent、PicoClaw、NanoClaw、NullClaw、IronClaw、LobsterAI、TinyClaw、Moltis、CoPaw、ZeptoClaw、ZeroClaw。整体围绕轻量 Agent、私有化、长期记忆、多智能体与渠道/插件运行时展开；OpenClaw 仍是核心风向标。</p>
+<hr>
+<h2>4. 开源趋势</h2>
+<ul>
+<li><strong>Agent Skills 大爆发</strong>：<code>anthropics/skills</code> 官方入场，<code>mattpocock/skills</code>、<code>humanlayer/skills</code>、<code>ECC</code>、<code>ruflo</code>、<code>everything-claude-code</code> 同日登榜。Skills 正从提示词片段变为可分享、可治理的工程资产。</li>
+<li><strong>Agent 输出质量与“去 AI 味”</strong>：<code>ponytail</code> 主张“像最懒的资深工程师一样只做必要改动”，单日 +2,845；<code>humanizer</code>、<code>diagram-design</code> 等关注输出可交付性。</li>
+<li><strong>上下文 / token 成本</strong>：<code>caveman</code> 削减 65% token；Spotify Portal 宣称削减 90%；<code>ECC</code> 做 Agent harness 性能优化。Agent 记忆侧，<code>OKF Agent Memory</code>、<code>claude-mem</code>、<code>mem0</code>、<code>cognee</code> 热度上升。</li>
+<li><strong>本地推理嵌入 Agent</strong>：<code>magnitude</code> 自动为硬件选择模型，并接入 Claude Code、OpenCode、Cline；<code>ollama</code> 快速支持 Kimi、GLM、DeepSeek、Qwen；<code>VoiceStudio</code> 本地多模态黑马 +1,345。</li>
+<li><strong>RAG 范式反思</strong>：<code>PageIndex</code> 无向量 RAG、<code>Graphify</code> 图知识库 RAG、<code>LEANN</code> 97% 存储压缩，冲击传统 embedding + top-k。</li>
+<li><strong>安全与网关</strong>：<code>apache/casbin-gateway</code> 面向 AI &amp; MCP 安全网关，说明 MCP 普及后访问控制层成为新需求。</li>
+</ul>
+<hr>
+<h2>5. HN 社区热议</h2>
+<ul>
+<li><strong>09-05 焦点</strong>：collusion.wiki “OpenAI agent 留言板” 1538 分 / 1229 评；Anthropic 费马大定理 531 / 332；GPT-6 Astra OpenRouter 147 / 77；TERMy“不用 LLM 的终端助手” 100 / 29；Spotify Portal 90% token 55 / 23。</li>
+<li><strong>09-06 焦点</strong>：LLMs as a Cognitive Virus 207 / 173；OpenAI wiki 事件多信源重复提交但评论分散；Anthropic 公关/审查争议；GPT-6 Astra robot arms 来源受质疑；OKF Agent Memory 48 / 16。</li>
+<li><strong>核心情绪</strong>：审慎、批判，治理与信任议题压过技术炫酷。社区对模型来源、评测可信度、Agent 安全失控、实验室透明度高度敏感；同时认可 Agent 持久记忆、token 削减等工程方向。</li>
+</ul>
+<hr>
+<h2>6. 官方动态</h2>
+<p><strong>Anthropic</strong>  </p>
+<ul>
+<li><strong>Formalizing Fermat’s Last Theorem</strong>（官网署名 09-04）：Claude 较大程度自主完成 Lean 4 形式化证明，展示长周期数学工程能力。  </li>
+<li><strong>India Country Brief: Anthropic Economic Index</strong>：印度占 Claude.ai 使用量约 5.8%，全球第二；按劳动年龄人口调整后排 101/116，渗透率仍有空间。  </li>
+<li><strong>Reviewing the evidence on worker retraining programs</strong>：基于 56 项美国 RCT 的元分析，参与 AI 就业政策辩论。</li>
+</ul>
+<p><strong>OpenAI</strong>  </p>
+<ul>
+<li>官网 09-05 新增内容为 0，本周无官方研究/政策更新被追踪到。  </li>
+<li>生态侧重点：GPT-6 Astra 在 OpenRouter 上线并 GA，引发价格、上下文与推理表现对比；同时出现 robot arms 演示、维基事件与宕机争议，官方沟通与信任管理承压。</li>
+</ul>
+<hr>
+<h2>7. 下周信号</h2>
+<ol>
+<li><strong>CLI 稳定性修复窗口</strong>：重点关注 Claude Code Windows 文件锁/更新、Codex MCP OAuth scopes、Gemini Subagent 终止语义、Copilot <code>agentStop</code> 与 <code>tools/list</code> 永久移除问题。  </li>
+<li><strong>OpenClaw 发布节奏与积压清理</strong>：v2026.9.2 后下一批修复能否覆盖 <code>crash-loop</code>、<code>message-loss</code>；<code>needs-product-decision</code> 标签瓶颈和 276 条待合并 PR 是否缓解。  </li>
+<li><strong>Skills 标准化</strong>：<code>anthropics/skills</code> 与社区 skills 仓库可能催生注册、发现、权限与安全规范；去 AI 味、输出质量工具链继续升温。  </li>
+<li><strong>成本与记忆</strong>：token 削减、Agent 长期记忆、本地推理服务器接入 CLI 将成为高频组合；RAG 向图结构、无向量、压缩存储继续分化。  </li>
+<li><strong>模型路由与配额</strong>：GPT-6 Astra、GLM-5.x、Sonnet-5 等新模型上线，CLI 需处理模型可见性、计费、配额和回退策略。  </li>
+<li><strong>治理与信任</strong>：HN 对实验室公关、审查、宕机和 Agent 安全的敏感度上升，MCP 安全网关、透明度报告、独立评测可能成为下一阶段焦点。</li>
+</ol>
+<hr>
+<p><em>本日报由 <a href="https://github.com/ycsxh/agents-radar">agents-radar</a> 自动生成。</em></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Tools Weekly Digest 2026-10-05</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-10-05/ai-weekly-en</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-10-05/ai-weekly-en</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>AI Tools Ecosystem Weekly Report 2026-W41 Coverage: 2026-09-05 ~ 2026-10-01 | Generated: 2026-10-05 06:22 UTC AI Tools Ecosystem Weekly Report — 2026-W41 Data note: This recap synthesizes the provided 2026-W41 daily digests, primarily the 2026-09-05 and 2026-09-06 snapshots. Counts are based on the daily reports’ “significant samples” unless otherwise noted, not full GitHub totals. 1. Week’s Top Stories 2026-09-05 — Anthropic formalizes Fermat’s Last Theorem in Lean 4. Claude completed a largely...</description>
+      <content:encoded><![CDATA[<h1>AI Tools Ecosystem Weekly Report 2026-W41</h1>
+<blockquote>
+<p>Coverage: 2026-09-05 ~ 2026-10-01 | Generated: 2026-10-05 06:22 UTC</p>
+</blockquote>
+<hr>
+<h1>AI Tools Ecosystem Weekly Report — 2026-W41</h1>
+<blockquote>
+<p><strong>Data note:</strong> This recap synthesizes the provided 2026-W41 daily digests, primarily the <strong>2026-09-05</strong> and <strong>2026-09-06</strong> snapshots. Counts are based on the daily reports’ “significant samples” unless otherwise noted, not full GitHub totals.</p>
+</blockquote>
+<hr>
+<h2>1. Week’s Top Stories</h2>
+<ul>
+<li><strong>2026-09-05 — Anthropic formalizes Fermat’s Last Theorem in Lean 4.</strong> Claude completed a largely autonomous, machine-checked formalization over 11 days. HN discussion hit <strong>531 points / 332 comments</strong>, with debate around credibility, compute cost, and whether this is a true AI-for-math milestone.  </li>
+<li><strong>2026-09-05 — Agent Skills ecosystem explodes.</strong> <code>mattpocock/skills</code> added <strong>+2,758 stars</strong> in a day; <code>anthropics/skills</code>, <code>humanlayer/skills</code>, <code>ECC</code>, and <code>ponytail</code> all trended. Skills are becoming the shareable unit of agent behavior.  </li>
+<li><strong>2026-09-05 — HN dominated by OpenAI agent-message-board disclosure and GPT-6 Astra.</strong> A collusion.wiki post about a “new OpenAI agent message board” reached <strong>1,538 points / 1,229 comments</strong>. GPT-6 Astra appeared on OpenRouter (<strong>147 / 77</strong>), while unexplained OpenAI/Anthropic outages added to trust concerns.  </li>
+<li><strong>2026-09-06 — OpenClaw ships v2026.9.2.</strong> The release targets Gateway event-loop pressure, chat/dashboard responsiveness, and long-transcript/disk-usage handling. The project processed <strong>500 issues and 500 PRs</strong>, with <strong>224 merged/closed</strong> but <strong>276 PRs still pending</strong>.  </li>
+<li><strong>2026-09-05 to 2026-09-06 — CLI release burst.</strong> Codex shipped <strong>v0.153.4/v0.153.3</strong>; Claude Code moved <strong>v2.1.261 → v2.1.263</strong>; Copilot CLI shipped <strong>v1.0.84-1/0</strong>; OpenCode shipped <strong>v1.18.29/v1.18.28</strong>; Pi moved <strong>v0.85.0 → v0.85.1</strong>; Gemini CLI stayed on nightly; Qwen Code shipped 3 versions on 09-06; CodeWhale released <strong>v0.9.12</strong>.  </li>
+<li><strong>2026-09-05 — Spotify’s Portal claims 90% Claude Code token reduction.</strong> HN reaction (<strong>55 / 23</strong>) confirmed that token/context cost is now a first-class engineering concern, not just a model-pricing issue.  </li>
+<li><strong>2026-09-06 — HN shifts toward cognitive and governance risk.</strong> “LLMs as a Cognitive Virus” led at <strong>207 / 173</strong>. Anthropic faced “PR spending” and “over-censorship” criticism, while OpenAI’s wiki event was submitted across multiple sources but drew fragmented discussion.  </li>
+<li><strong>2026-09-05/06 — Local inference + agent integration accelerates.</strong> <code>magnitudedev/magnitude</code> trended as an open inference server that auto-selects hardware-appropriate models and plugs into Claude Code, OpenCode, Cline, and Cursor. <code>VoiceStudio</code>, a local ElevenLabs alternative, added <strong>+1,345 stars</strong> on 09-05.</li>
+</ul>
+<hr>
+<h2>2. CLI Tools Progress</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Activity</th>
+<th>Key Changes / Signals</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong></td>
+<td>v2.1.261 (09-05) → v2.1.263 (09-06); 10 issues / 2–3 PRs per day</td>
+<td>Mature but reliability-focused. Top issue #42776 on Windows orphan-process file locks hit <strong>159 comments</strong>. Also: silent-update restart failures, <code>bypassPermissions</code> regression, subagents inheriting parent system prompt/tools, HTTP MCP “connected but no such tool,” cross-machine <code>~/.claude/</code> sync, Remote Control session consistency. PR cadence conservative.</td>
+</tr>
+<tr>
+<td><strong>OpenAI Codex</strong></td>
+<td>v0.153.4 / v0.153.3 (09-05); no release 09-06; high issue/PR volume</td>
+<td>High-contribution phase. MCP OAuth dynamic client registration missing scopes blocks remote MCP login. Windows EFS plugin failures and WSL path crashes persist. Model routing/quota pressure from GPT-6 Astra is visible.</td>
+</tr>
+<tr>
+<td><strong>Gemini CLI</strong></td>
+<td>v0.60.0-nightly both days; 10 issues / 10 PRs</td>
+<td>Fast maintainer response. Subagent <code>MAX_TURNS</code> false <code>GOAL success</code>, generalist-agent hangs, MCP prompt JSON encoding breaking quotes/newlines, env-var injection consent, symlink-related security concerns. P1 bugs moving into need-retesting.</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot CLI</strong></td>
+<td>v1.0.84-1 / v1.0.84-0 (09-05); no release 09-06; issue-heavy, PR-light</td>
+<td>Platform integration phase. <code>agentStop</code> misfires on subagent turns, <code>/review</code> never ends. One MCP tool timeout can permanently remove a server after <code>tools/list</code> refresh failure. ACP mode silent auto-approve; auto-update overwrites desktop <code>.exe</code>; remote-session regressions. Community PR contribution near zero.</td>
+</tr>
+<tr>
+<td><strong>Kimi Code CLI</strong></td>
+<td>Low activity; 1 issue/1 PR (09-05), 4 issues/1 PR (09-06)</td>
+<td>Maintenance mode. Ctrl+V failure (#2634) is a notable UX regression.</td>
+</tr>
+<tr>
+<td><strong>OpenCode</strong></td>
+<td>v1.18.29 / v1.18.28 (09-05); 10 issues / 10 PRs both days</td>
+<td>Fastest open-source iteration. WebChat agent hallucinated self-Q&A; large-text paste crash on Windows. Strong PR throughput; Claude Code rules/Hooks compatibility remains a de facto standard.</td>
+</tr>
+<tr>
+<td><strong>Pi</strong></td>
+<td>v0.85.0 (09-05) → v0.85.1 (09-06); 10 issues / 10 PRs</td>
+<td>Agile release-fix cycle. Post-release packaging regression was quickly addressed.</td>
+</tr>
+<tr>
+<td><strong>Qwen Code</strong></td>
+<td>3 versions on 09-06 (2 nightly + 1 preview); 10 issues / 10 PRs</td>
+<td>Strong engineering execution. Same-day P1 fixes for Cerebras 400 errors and HTML export. Persisted <code>mcp_config</code> not auto-loading after desktop restart is a key MCP reliability gap.</td>
+</tr>
+<tr>
+<td><strong>CodeWhale (ex-DeepSeek TUI)</strong></td>
+<td>v0.9.12 (09-06); 09-05: 5 issues / 13 PRs, mostly Dependabot</td>
+<td>Small community, maintenance-heavy. Fleet cancelled/paused agents holding write permissions caused parallel-write deadlock. Rebranding signal.</td>
+</tr>
+<tr>
+<td><strong>Claude Code Skills</strong></td>
+<td>No release; ecosystem-standard role</td>
+<td><code>anthropics/skills</code> is becoming the reference point for the broader Skills ecosystem.</td>
+</tr>
+</tbody></table>
+<p><strong>Cross-tool themes:</strong> agent/subagent lifecycle correctness, MCP OAuth/refresh/tool-list reliability, Windows desktop lifecycle management, permission and sandbox consistency, context/token cost control, and new-model routing/quota pressure.</p>
+<hr>
+<h2>3. AI Agent Ecosystem</h2>
+<p><strong>OpenClaw</strong> remained the center of gravity for Claw-family projects.</p>
+<ul>
+<li><strong>2026-09-05:</strong> Very high activity but <strong>no release</strong>. 500 issue updates (395 new/active, 105 closed) and 500 PR updates (348 pending, 152 merged/closed). Long-standing P0/P1 issues dominated: #91009 Codex PreToolUse hook CPU spikes and Gateway RPC stalls (21 comments), #48003 Steer mode failing to inject mid-turn (20 comments), plus crash-loop, message-loss, and session-state failures. Several P0 regressions closed: placeholder image rendering (#104721), Matrix thread replies (#87307), Codex OAuth refresh stalls (#86215), and cron JSON schema incompatibility (#107449).</li>
+<li><strong>2026-09-06:</strong> <strong>v2026.9.2</strong> released. 500 issues (123 closed) and 500 PRs (224 merged/closed; 276 pending). The release focused on Gateway responsiveness and event-loop pressure. Key bottleneck: labels like <code>clawsweeper:needs-product-decision</code>, <code>needs-maintainer-review</code>, and <code>no-new-fix-pr</code> appear at high frequency, indicating maintainer triage is now the limiting factor. P0/P1 and <code>impact:crash-loop</code> / <code>impact:message-loss</code> issues still backlogged.</li>
+<li><strong>Peer projects:</strong> The daily reports cover <strong>13 Claw-family projects</strong> (NanoBot, Hermes Agent, PicoClaw, NanoClaw, NullClaw, IronClaw, LobsterAI, TinyClaw, Moltis, CoPaw, ZeptoClaw, ZeroClaw). Most showed less detailed signal than OpenClaw, suggesting a fragmented but growing ecosystem. <code>NousResearch/hermes-agent</code> trended on GitHub with <strong>242k stars</strong>, emphasizing extensibility, private deployment, and long-term memory.</li>
+</ul>
+<p><strong>Ecosystem signal:</strong> Agent frameworks are converging on skills, memory, multi-agent orchestration, and MCP interoperability—but reliability and maintainer bandwidth are becoming the primary constraints.</p>
+<hr>
+<h2>4. Open Source Trends</h2>
+<ul>
+<li><strong>Agent Skills as the new package unit.</strong> <code>anthropics/skills</code>, <code>mattpocock/skills</code>, <code>humanlayer/skills</code>, <code>ECC</code>, and <code>everything-claude-code</code> all trended. Skills are becoming shareable, composable behavior packages for existing coding agents.</li>
+<li><strong>Token/context cost optimization.</strong> <code>caveman</code> claimed 65% token reduction; Spotify’s Portal claimed 90% Claude Code token reduction. Context compression and prompt efficiency are now core engineering concerns.</li>
+<li><strong>Anti-AI-slop and output quality.</strong> <code>ponytail</code> (minimal-change “lazy senior engineer” behavior), <code>humanizer</code>, and <code>diagram-design</code> reflect demand for agents that make fewer, better changes—not just more code.</li>
+<li><strong>Local inference + agent integration.</strong> <code>magnitude</code> auto-selects local models by hardware and plugs into Claude Code, OpenCode, Cline, and Cursor. <code>ollama</code> remains the local model baseline. <code>VoiceStudio</code> showed demand for local multimodal tooling.</li>
+<li><strong>RAG shifts toward agent memory and compression.</strong> <code>claude-mem</code>, <code>mem0</code>, <code>cognee</code>, Git-native <code>OKF Agent Memory</code>, no-vector <code>PageIndex</code>, graph-based <code>Graphify</code>, and 97%-compression <code>LEANN</code> all point away from naive embedding + top-k RAG.</li>
+<li><strong>Security and governance for MCP/agents.</strong> Apache <code>casbin-gateway</code> for AI &amp; MCP security, env-var injection consent, symlink handling, and OAuth scope bugs show that agent access control is becoming a first-class infrastructure layer.</li>
+<li><strong>Interop protocols rising.</strong> Hooks, ACP, and A2A are appearing across CLI tools; Claude Code rules/Hooks are becoming a compatibility target for open-source alternatives.</li>
+</ul>
+<hr>
+<h2>5. HN Community Highlights</h2>
+<p><strong>Core topics:</strong></p>
+<ul>
+<li><strong>AI cognitive and societal risk.</strong> “LLMs as a Cognitive Virus” (<strong>207 / 173</strong>) led 09-06 discussion, mixing cultural-evolution framing with sharp debate over whether the metaphor is insight or pseudoscience.</li>
+<li><strong>Trust in frontier labs.</strong> The OpenAI agent-message-board disclosure (<strong>1,538 / 1,229</strong> on 09-05), unexplained outages, and Anthropic’s PR/censorship controversy pushed sentiment toward skepticism and governance scrutiny.</li>
+<li><strong>AI for formal math.</strong> Anthropic’s Lean 4 Fermat proof (<strong>531 / 332</strong>) was widely treated as a genuine milestone, with discussion around verification, compute cost, and long-horizon autonomy.</li>
+<li><strong>Token cost and agent efficiency.</strong> Spotify’s Portal (<strong>55 / 23</strong>) and non-LLM terminal assistant TERMy (<strong>100 / 29</strong>) showed appetite for cheaper, more controllable alternatives.</li>
+<li><strong>Agent memory and reliability.</strong> OKF Agent Memory (<strong>48 / 16</strong>) resonated as a direct answer to long-task amnesia.</li>
+<li><strong>Source reliability and hype fatigue.</strong> GPT-6 Astra robot-arm demo (<strong>73 / 30</strong>) drew skepticism because the domain was not OpenAI-official.</li>
+</ul>
+<p><strong>Sentiment:</strong> Cautious, critical, and increasingly governance-focused. Technical excitement remains, but trust, transparency, safety, and cost predictability now dominate high-engagement threads.</p>
+<hr>
+<h2>6. Official Announcements</h2>
+<p><strong>Anthropic:</strong></p>
+<ul>
+<li><strong>Formalizing Fermat’s Last Theorem</strong> — Published around <strong>2026-09-04/05</strong>. Claude autonomously formalized the theorem in Lean 4 over 11 days. Described as the first complete, computer-checkable formalization of Fermat’s Last Theorem. Community response included Kevin Buzzard’s public reaction.</li>
+<li><strong>India Country Brief: The Anthropic Economic Index</strong> — India contributed <strong>5.8% of Claude.ai usage</strong>, ranking second globally, but only <strong>101st of 116</strong> countries when adjusted for labor-age population. Indian users showed higher occupational use and granted Claude more autonomy.</li>
+<li><strong>Reviewing the evidence on worker retraining programs</strong> — A meta-analysis of 56 U.S. randomized controlled trials plus European evidence, directly addressing AI-driven labor-market disruption and retraining effectiveness.</li>
+</ul>
+<p><strong>OpenAI:</strong></p>
+<ul>
+<li><strong>No new tracked official content</strong> in the 2026-09-05 official-content digest. However, the ecosystem saw <strong>GPT-6 Astra on OpenRouter</strong> and reports of GA, plus the OpenAI agent-message-board disclosure and same-day outage discussions. Official silence on those community controversies was itself a signal.</li>
+</ul>
+<hr>
+<h2>7. Next Week’s Signals</h2>
+<ul>
+<li><strong>Agent lifecycle correctness will remain the top CLI battleground.</strong> Expect fixes around subagent termination, <code>agentStop</code>, <code>MAX_TURNS</code>, inherited tools/prompts, and false-success states. Watch Claude Code, Copilot CLI, and Gemini CLI issue threads.</li>
+<li><strong>MCP reliability and security will get more attention.</strong> OAuth scope handling, <code>tools/list</code> refresh, persisted <code>mcp_config</code>, prompt encoding, and permission prompts are recurring failure points. MCP gateways and access-control layers should gain traction.</li>
+<li><strong>Windows desktop lifecycle management is overdue.</strong> File locks, orphan processes, silent updates, WSL path handling, EFS plugin failures, and paste crashes appear across multiple tools. A cross-tool quality push is likely.</li>
+<li><strong>Skills standardization will accelerate.</strong> <code>anthropics/skills</code> is emerging as the reference implementation. Expect more third-party skill registries, compatibility layers, and “skill review” tooling.</li>
+<li><strong>Token/context economics will drive tooling.</strong> After Portal and <code>caveman</code>, expect more local inference servers, context compression, memory layers, and prompt-efficiency benchmarks.</li>
+<li><strong>OpenClaw’s maintainer bottleneck may force process changes.</strong> With 276 pending PRs and many <code>needs-product-decision</code> / <code>needs-maintainer-review</code> tags, the project may need triage automation or delegated ownership to keep pace.</li>
+<li><strong>HN sentiment will stay governance-heavy.</strong> Trust, transparency, cognitive risk, and lab accountability are likely to keep outperforming pure benchmark stories. Formal math and agent memory remain the most credible technical positive narratives.</li>
+<li><strong>New-model routing pressure will hit clients.</strong> GPT-6 Astra, GLM-5.x, and Sonnet-5-class models will force CLI tools to update routing, quota accounting, visibility, and fallback behavior quickly.</li>
+</ul>
+<hr>
+<p><em>This digest is auto-generated by <a href="https://github.com/ycsxh/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>AI 工具生态月报 2026-10-01</title>
       <link>https://duanyytop.github.io/agents-radar/#2026-10-01/ai-monthly</link>
@@ -14350,279 +14645,6 @@ Has been open for ~6 weeks with active discussion; IRCv3 continues to be used by
 </ul>
 <hr>
 <p><em>All items above are drawn strictly from the provided crawl data and include official links. Where excerpts were truncated or metadata limited, this is flagged rather than filled in.</em></p>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/ycsxh/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 开源趋势日报 2026-09-05</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-09-05/ai-trending</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-09-05/ai-trending</guid>
-      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
-      <description>AI 开源趋势日报 2026-09-05 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-09-05 03:59 UTC 《AI 开源趋势日报》 日期：2026-09-05 过滤说明：Trending 榜单中 fmtlib/fmt、bikini/exploitarium、bannedbook/fanqiang、clshortfuse/renodx 均非 AI/ML 项目，已略去；其余 Trending 项目与「AI 主题搜索结果」去重合并后进入分类。 1. 今日速览 今日 Trending 几乎被 Agent 生态承包：mattpocock/skills 单日 +2,758 stars，ponytail、ECC、anthropics/skills、caveman 等围绕「Agent Skill / 编码代理调优」的项目集体登榜。 上下文与 token 成本成为新战场：caveman 宣称可削减 65% token，ECC 把 agent harness 性能当作系统工程来做，「少写代码、少用 token」成为明确的社区诉求。...</description>
-      <content:encoded><![CDATA[<h1>AI 开源趋势日报 2026-09-05</h1>
-<blockquote>
-<p>数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-09-05 03:59 UTC</p>
-</blockquote>
-<hr>
-<h1>《AI 开源趋势日报》</h1>
-<p><strong>日期：2026-09-05</strong></p>
-<blockquote>
-<p>过滤说明：Trending 榜单中 <code>fmtlib/fmt</code>、<code>bikini/exploitarium</code>、<code>bannedbook/fanqiang</code>、<code>clshortfuse/renodx</code> 均非 AI/ML 项目，已略去；其余 Trending 项目与「AI 主题搜索结果」去重合并后进入分类。</p>
-</blockquote>
-<hr>
-<h2>1. 今日速览</h2>
-<ul>
-<li><strong>今日 Trending 几乎被 Agent 生态承包</strong>：<code>mattpocock/skills</code> 单日 +2,758 stars，<code>ponytail</code>、<code>ECC</code>、<code>anthropics/skills</code>、<code>caveman</code> 等围绕「Agent Skill / 编码代理调优」的项目集体登榜。</li>
-<li><strong>上下文与 token 成本成为新战场</strong>：<code>caveman</code> 宣称可削减 65% token，<code>ECC</code> 把 agent harness 性能当作系统工程来做，「少写代码、少用 token」成为明确的社区诉求。</li>
-<li><strong>本地多模态应用出现黑马</strong>：<code>VoiceStudio</code> 今日 +1,345 stars，主打完全本地化的 ElevenLabs 替代方案；本地推理服务 <code>magnitude</code> 也同步上榜。</li>
-<li><strong>模型训练层仍有人在深耕</strong>：Google 的时序基础模型 <code>TimesFM</code> 回归热榜，企业级 RL 后训练框架 <code>miles</code> 上榜，代表「预训练 + 后训练」的工业化分工仍在推进。</li>
-<li><strong>RAG 架构开始「自我反思」</strong>：无向量 RAG（<code>PageIndex</code>）、图结构知识库 RAG（<code>Graphify</code>）、97% 存储压缩（<code>LEANN</code>）等新方案，正在冲击传统「embedding + top-k」范式。</li>
-</ul>
-<hr>
-<h2>2. 各维度热门项目</h2>
-<h3>🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）</h3>
-<ol>
-<li><p><a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a> ⭐145,669<br>Agent 工程平台，连接模型、工具、记忆与向量库，是当前 LLM 应用开发最常用的底层工程框架之一。</p>
-</li>
-<li><p><a href="https://github.com/huggingface/transformers">huggingface/transformers</a> ⭐164,798<br>Hugging Face 模型框架，仍是文本、视觉、音频、多模态模型训练与推理的事实标准。</p>
-</li>
-<li><p><a href="https://github.com/ollama/ollama">ollama/ollama</a> ⭐180,173<br>本地运行大模型的最短路径；已跟进 Kimi-K2.6、GLM-5.2、Qwen、gpt-oss 等最新开源模型。</p>
-</li>
-<li><p><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a> ⭐176,580<br>面向 LLM 与 Agent 的网页搜索/抓取/交互 API，是 RAG 和 Agent 获取外部上下文的核心基础设施。</p>
-</li>
-<li><p><a href="https://github.com/magnitudedev/magnitude">magnitudedev/magnitude</a> 今日 +391<br>开源本地推理服务器，可根据硬件自动选择最佳本地模型，并接入 Claude Code、Cursor、OpenCode 等 Agent，降低长期推理成本。</p>
-</li>
-<li><p><a href="https://github.com/CopilotKit/CopilotKit">CopilotKit/CopilotKit</a> ⭐37,207<br>面向 Agent 与生成式 UI 的前端技术栈，支持 React、Angular、移动端，是 Agent 应用界面层的重要基础设施。</p>
-</li>
-<li><p><a href="https://github.com/0xPlaygrounds/rig">0xPlaygrounds/rig</a> ⭐8,525<br>Rust 生态的模块化 LLM 应用框架，适合追求高性能与类型安全的 Agent 后端开发。</p>
-</li>
-<li><p><a href="https://github.com/apache/casbin-gateway">apache/casbin-gateway</a> ⭐574<br>Apache 推出的 AI &amp; MCP 安全网关，说明 MCP 普及后面向 Agent 通信的访问控制/安全层正成为新需求。</p>
-</li>
-</ol>
-<hr>
-<h3>🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）</h3>
-<ol>
-<li><p><a href="https://github.com/mattpocock/skills">mattpocock/skills</a> 今日 +2,758<br>今日最热仓库。作者将自己 <code>.agents</code> 目录中的真实工程 Skills 开源，代表「Skill 正在成为 Agent 生态的可分享单元」。</p>
-</li>
-<li><p><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a> ⭐248,619，今日 +1,135<br>Agent harness 性能优化系统，覆盖 Skills、instincts、memory、security，是 Agent 工程化治理方向的代表性项目。</p>
-</li>
-<li><p><a href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a> ⭐126,329，今日 +1,679<br>让 AI Agent 像「最懒的资深开发」一样思考——best code is code you never wrote，直击代码量与维护成本痛点。</p>
-</li>
-<li><p><a href="https://github.com/anthropics/skills">anthropics/skills</a> 今日 +511<br>Anthropic 官方开源的 Agent Skills 仓库。「Skill」被官方标准化，意味着类似 Claude Code 的编码 Agent 正在形成独立生态。</p>
-</li>
-<li><p><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a> ⭐241,564，今日 +720<br>Nous Research 出品的「会成长的 Agent」。模型研究机构亲自下场做 Agent，体现行业重心正从模型转向智能体产品。</p>
-</li>
-<li><p><a href="https://github.com/langgenius/dify">langgenius/dify</a> ⭐154,474<br>最主流的开源 Agentic workflow + RAG 一体化开发平台，支持模型与工具插件化接入，是生产级智能体应用的重要选择。</p>
-</li>
-<li><p><a href="https://github.com/browser-use/browser-use">browser-use/browser-use</a> ⭐112,304<br>让 AI Agent 像人一样操作浏览器的开源基础设施，是「Agent 自动化线上任务」的关键依赖。</p>
-</li>
-<li><p><a href="https://github.com/anomalyco/opencode">anomalyco/opencode</a> 今日 +345<br>开源编码代理，是 Claude Code 生态外值得关注的替代/竞争方案之一。</p>
-</li>
-</ol>
-<blockquote>
-<p>同板块高热度 Skill：<code>humanizer</code>（+1,130，去除 AI 生成痕迹）、<code>caveman</code>（+501，token 压缩）、<code>diagram-design</code>（+437，高质量图表输出），将在趋势信号中进一步分析。</p>
-</blockquote>
-<hr>
-<h3>📦 AI 应用（具体应用产品、垂直场景解决方案）</h3>
-<ol>
-<li><p><a href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a> 今日 +1,345<br>今日 AI 应用层最大黑马：完全本地的 ElevenLabs 替代方案，覆盖声音克隆、AI 配音、视频翻译、转录与有声书生成，宣称支持 646 种语言。</p>
-</li>
-<li><p><a href="https://github.com/open-webui/open-webui">open-webui/open-webui</a> ⭐150,969<br>最受欢迎的自托管 AI 交互界面，支持 Ollama、OpenAI API 等后端，已成为本地部署的「标准前端」。</p>
-</li>
-<li><p><a href="https://github.com/harry0703/MoneyPrinterTurbo">harry0703/MoneyPrinterTurbo</a> ⭐120,658<br>AI 短视频流水线：输入主题/关键词即可自动生成高清短视频，属于自动化内容创作的代表应用。</p>
-</li>
-<li><p><a href="https://github.com/career-ops-hq/career-ops">career-ops-hq/career-ops</a> ⭐70,160<br>AI 求职垂类应用：在 Claude Code / Codex / OpenCode 中自动扫描职位、评估匹配度、定制简历并跟踪申请。</p>
-</li>
-<li><p><a href="https://github.com/Mintplex-Labs/anything-llm">Mintplex-Labs/anything-llm</a> ⭐65,627<br>本地优先的全栈 Agent 桌面应用，内置 RAG、知识库、文档聊天，强调「Own your intelligence」。</p>
-</li>
-<li><p><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a> ⭐64,622<br>LLM 驱动的多市场股票分析系统，整合实时行情、新闻与自动推送，是垂直金融场景的成熟开源应用。</p>
-</li>
-<li><p><a href="https://github.com/hugohe3/ppt-master">hugohe3/ppt-master</a> ⭐52,041<br>把文档/主题直接转换为原生 PowerPoint，支持原生动画、图表和配音，是办公垂直场景的高热度 AI 工具。</p>
-</li>
-<li><p><a href="https://github.com/CherryHQ/cherry-studio">CherryHQ/cherry-studio</a> ⭐51,447<br>AI 生产力客户端，支持智能聊天、300+ 助手以及统一接入主流前沿大模型。</p>
-</li>
-</ol>
-<hr>
-<h3>🧠 大模型/训练（模型权重、训练框架、微调工具）</h3>
-<ol>
-<li><p><a href="https://github.com/google-research/timesfm">google-research/timesfm</a> 今日 +342<br>Google Research 的时序基础模型（Time Series Foundation Model），主打零样本时间序列预测，是「AI for Science 与产业预测」方向的代表。</p>
-</li>
-<li><p><a href="https://github.com/radixark/miles">radixark/miles</a> 今日 +64<br>企业级 LLM/VLM 后训练强化学习框架，与 <code>slime</code> 协同演进，说明 RLHF/RL 后训练正在从实验室走向企业场景。</p>
-</li>
-<li><p><a href="https://github.com/rasbt/LLMs-from-scratch">rasbt/LLMs-from-scratch</a> ⭐104,347<br>经典「从零实现 ChatGPT-like LLM」教程仓库，持续作为开发者理解大模型内部原理的入口。</p>
-</li>
-<li><p><a href="https://github.com/jingyaogong/minimind">jingyaogong/minimind</a> ⭐58,568<br>只需约 2 小时即可从零训练 64M 参数小 LLM，是低门槛预训练教学的代表项目。</p>
-</li>
-<li><p><a href="https://github.com/skyzh/tiny-llm">skyzh/tiny-llm</a> ⭐4,542<br>面向系统工程师的 LLM 推理教学项目：在 Apple Silicon 上从零构建微型 vLLM + Qwen。</p>
-</li>
-<li><p><a href="https://github.com/open-compass/opencompass">open-compass/opencompass</a> ⭐7,394<br>大模型评测平台，已支持 Llama、Qwen、GLM、Claude、GPT-4 等 100+ 数据集，是模型发布后的「考试中心」。</p>
-</li>
-<li><p><a href="https://github.com/EasyJailbreak/EasyJailbreak">EasyJailbreak/EasyJailbreak</a> ⭐908<br>生成对抗性越狱 prompt 的 Python 框架，代表 LLM 红队攻防与安全评测方向。</p>
-</li>
-</ol>
-<hr>
-<h3>🔍 RAG/知识库（向量数据库、检索增强、知识管理）</h3>
-<ol>
-<li><p><a href="https://github.com/infiniflow/ragflow">infiniflow/ragflow</a> ⭐90,061<br>最领先的开源 RAG 引擎之一，融合 RAG 与 Agent 能力，构建面向 LLM 的上下文层。</p>
-</li>
-<li><p><a href="https://github.com/run-llama/llama_index">run-llama/llama_index</a> ⭐52,026<br>从「数据框架」进化为文档 Agent 与 OCR 平台，是 RAG 应用开发的核心工具链。</p>
-</li>
-<li><p><a href="https://github.com/milvus-io/milvus">milvus-io/milvus</a> ⭐45,977<br>高性能云原生向量数据库，是可规模化向量 ANN 搜索的代表性基础设施。</p>
-</li>
-<li><p><a href="https://github.com/VectifyAI/PageIndex">VectifyAI/PageIndex</a> ⭐35,521<br>主打「无向量、基于推理」的文档索引 RAG，代表社区对传统 embedding 方案的反思与新探索。</p>
-</li>
-<li><p><a href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify</a> ⭐114,806<br>将代码库、文档、SQL schema 等解析为可查询知识图谱的 Claude Code/Cursor Skill：本地确定性 AST 解析，不需要向量库。</p>
-</li>
-<li><p><a href="https://github.com/StarTrail-org/LEANN">StarTrail-org/LEANN</a> ⭐12,890<br>MLsys 2026 Best Paper 实现：RAG on Everything，宣称节省 97% 存储，并保持高速、准确的完全私有 RAG。</p>
-</li>
-<li><p><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a> ⭐93,212<br>跨会话 Agent 上下文记忆系统：捕获 Agent 行为 → AI 压缩 → 注入未来会话，是 Agent 长期记忆产品化的热门实现。</p>
-</li>
-<li><p><a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> ⭐64,714<br>AI Agent 的「记忆层」基础设施，为 Agent 提供可持久化、可生产部署的上下文记忆能力。</p>
-</li>
-</ol>
-<hr>
-<h2>3. 趋势信号分析</h2>
-<p>从今日数据看，<strong>最明确的信号是：模型层的曝光让位于 Agent 外围工程</strong>。Skill、记忆、上下文压缩、harness 调优等项目集体冲榜，说明当基础模型能力趋稳后，社区最关心的是把编码代理调得「更懂自己、更省钱、更可控」。<code>caveman</code> 宣称砍掉 65% token，<code>ECC</code> 把 harness 性能作为系统来优化，「token 经济学」已成为独立卖点。与此同时，<code>humanizer</code> 与 <code>diagram-design</code> 的上榜，表明 AI 生成内容的人性化与交付质量也开始被当作产品——这通常是生态进入深水区的信号。</p>
-<p><strong>本地化与端侧趋势并未减弱</strong>：<code>VoiceStudio</code> 跑通本地语音全链路，<code>magnitude</code> 让本地推理按硬件适配 Agent，<code>ollama</code> 则持续跟进 Kimi-K2.6、GLM-5.2 等最新模型。RAG 也正在从第一代 embedding + top-k 走向新架构——无向量 RAG、图知识库 RAG、以及高压缩存储方案，都指向更轻、更结构化、更私有的上下文构建方式。</p>
-<hr>
-<h2>4. 社区关注热点</h2>
-<ul>
-<li><strong>Agent Skill 的标准化与复用</strong>：<code>anthropics/skills</code>（官方）与 <code>mattpocock/skills</code>（个人）同时爆发，说明 Skill 正成为类似「dotfiles」的新型开源单元。开发者值得尽早建立自己的 <code>.agents/</code> 技能库。</li>
-<li><strong>上下文成本与 token 优化</strong>：<code>ECC</code>、<code>caveman</code>、<code>headroom</code> 从不同层面降低 Agent 会话的 token 消耗。长期运行编码 Agent 的团队应重点关注这一方向，成本优化空间可能远超换模型。</li>
-<li><strong>Agent 长期记忆层</strong>：<code>claude-mem</code> 与 <code>mem0</code> 正在解决 Agent「跨会话失忆」的硬伤。没有长期记忆，Agent 只能停留在「高级问答」；这是迈向真正协作者的关键基础设施。</li>
-<li><strong>本地多模态闭环</strong>：<code>VoiceStudio</code> 与 <code>magnitude</code> 代表两种本地化路径——本地模型 + 本地推理服务器 + 本地应用，值得所有有数据隐私诉求的团队持续跟踪。</li>
-<li><strong>新范式 RAG</strong>：<code>PageIndex</code>（无向量 RAG）、<code>Graphify</code>（代码知识图谱）、<code>LEANN</code>（存储压缩 97%）值得研究者与架构师重点体验；它们可能改变未来 RAG 的默认技术选型。</li>
-</ul>
-<hr>
-<p><em>本日报由 <a href="https://github.com/ycsxh/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI Open Source Trends 2026-09-05</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-09-05/ai-trending-en</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-09-05/ai-trending-en</guid>
-      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
-      <description>AI Open Source Trends 2026-09-05 Sources: GitHub Trending + GitHub Search API | Generated: 2026-09-05 03:59 UTC AI Open Source Trends Report — 2026-09-05 Filter note: From the 17 GitHub Trending repos, I excluded non-AI projects: fmtlib/fmt (C++ formatting), bannedbook/fanqiang (network access), bikini/exploitarium (security exploit archive), and clshortfuse/renodx (DirectX graphics). Topic-search results were used for broader category context.Star note: +N today comes from the Trending snapshot...</description>
-      <content:encoded><![CDATA[<h1>AI Open Source Trends 2026-09-05</h1>
-<blockquote>
-<p>Sources: GitHub Trending + GitHub Search API | Generated: 2026-09-05 03:59 UTC</p>
-</blockquote>
-<hr>
-<h1>AI Open Source Trends Report — 2026-09-05</h1>
-<p><strong>Filter note:</strong> From the 17 GitHub Trending repos, I excluded non-AI projects: <code>fmtlib/fmt</code> (C++ formatting), <code>bannedbook/fanqiang</code> (network access), <code>bikini/exploitarium</code> (security exploit archive), and <code>clshortfuse/renodx</code> (DirectX graphics). Topic-search results were used for broader category context.<br><strong>Star note:</strong> <code>+N today</code> comes from the Trending snapshot; total stars are from topic-search metadata when available.</p>
-<hr>
-<h2>1. Today’s Highlights</h2>
-<p>Today’s clearest signal is that <strong>Agent Skills are becoming a packaging standard for coding agents</strong>. Anthropic published an official skills repo, independent developers shipped large skill/harness repos, and the top Trending slots moved from “apps” to “agent behavior packs.” Meanwhile, a wave of token/context optimizations — including <code>caveman</code>, <code>ponytail</code>, and <code>humanizer</code> — shows the community is already focused on making agents cheaper, faster, and less obviously AI-generated. Local-first AI also continues to expand into new modalities: <code>magnitudedev/magnitude</code> pushes local inference into existing agent CLIs, and <code>VoiceStudio</code> brings fully local voice cloning quality up to ElevenLabs-class levels. On the model side, <code>google-research/timesfm</code> and <code>radixark/miles</code> show enterprise interest in specialized foundation models and RL post-training rather than just chat assistants. RAG/memory infrastructure remains the persistent layer under almost every one of these agent workflows.</p>
-<hr>
-<h2>2. Top Projects by Category</h2>
-<h3>🔧 AI Infrastructure</h3>
-<ul>
-<li><p><a href="https://github.com/huggingface/transformers">huggingface/transformers</a> — ⭐164,798<br>The standard open-source framework for state-of-the-art text, vision, audio, and multimodal models; still the backbone of most open model workflows.</p>
-</li>
-<li><p><a href="https://github.com/ollama/ollama">ollama/ollama</a> — ⭐180,173<br>Local LLM runtime now tracking Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, and Qwen — a useful barometer for the open-weight model release cycle.</p>
-</li>
-<li><p><a href="https://github.com/magnitudedev/magnitude">magnitudedev/magnitude</a> — +391 today<br>Open-source inference server that matches the best local model to your hardware and plugs into coding agents you already use.</p>
-</li>
-<li><p><a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a> — ⭐145,669<br>The “agent engineering platform”; the most widely used orchestration layer for tools, memory, MCP, and RAG.</p>
-</li>
-<li><p><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a> — ⭐176,580<br>Web search/scraping/crawl API for LLM context; the de facto data acquisition layer for many agent applications.</p>
-</li>
-<li><p><a href="https://github.com/headroomlabs-ai/headroom">headroomlabs-ai/headroom</a> — ⭐68,952<br>Context-compression library/proxy/MCP server that reduces tool outputs and RAG chunks by 20–95% before they reach an LLM.</p>
-</li>
-</ul>
-<hr>
-<h3>🤖 AI Agents / Workflows</h3>
-<ul>
-<li><p><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a> — ⭐248,619 total, +1,135 today<br>Agent-harness performance optimization system covering skills, instincts, memory, and security for Claude Code, Codex, OpenCode, Cursor, and similar agents.</p>
-</li>
-<li><p><a href="https://github.com/anthropics/skills">anthropics/skills</a> — +511 today<br>Anthropic’s official public Agent Skills repository; the clearest sign that skills are becoming a first-class agent packaging format.</p>
-</li>
-<li><p><a href="https://github.com/mattpocock/skills">mattpocock/skills</a> — +2,758 today<br>“Skills for Real Engineers,” shipped directly from the author’s <code>.agents</code> directory; today’s highest-starred AI-related repo.</p>
-</li>
-<li><p><a href="https://github.com/anomalyco/opencode">anomalyco/opencode</a> — +345 today<br>Open-source coding agent; a fast-growing terminal-centric option in the post-Claude-Code/Codex agent wave.</p>
-</li>
-<li><p><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a> — ⭐241,564 total, +720 today<br>“The agent that grows with you” — an adaptive personal-agent harness from a well-known open model research group.</p>
-</li>
-<li><p><a href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a> — ⭐126,329 total, +1,679 today<br>Makes an AI agent “think like the laziest senior dev”; an extreme but effective example of persona skill engineering.</p>
-</li>
-<li><p><a href="https://github.com/blader/humanizer">blader/humanizer</a> — +1,130 today<br>Agent skill that strips detectable patterns of AI-generated writing from text — practically relevant but ethically contested.</p>
-</li>
-<li><p><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a> — +501 today<br>Claude Code skill that claims ~65% token reduction by using “caveman” language; direct evidence of community pressure around agent context cost.</p>
-</li>
-</ul>
-<hr>
-<h3>📦 AI Applications</h3>
-<ul>
-<li><p><a href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a> — +1,345 today<br>Open-source, fully local ElevenLabs alternative: voice cloning, voice design, video dubbing, transcription, and audiobook creation in 646 languages.</p>
-</li>
-<li><p><a href="https://github.com/open-webui/open-webui">open-webui/open-webui</a> — ⭐150,969<br>User-friendly self-hosted AI interface for Ollama/OpenAI-compatible backends; the most popular practical entry point into local/agent AI.</p>
-</li>
-<li><p><a href="https://github.com/harry0703/MoneyPrinterTurbo">harry0703/MoneyPrinterTurbo</a> — ⭐120,658<br>Uses LLM + automated workflows to generate short branded videos from a topic or keyword.</p>
-</li>
-<li><p><a href="https://github.com/CherryHQ/cherry-studio">CherryHQ/cherry-studio</a> — ⭐51,447<br>Multi-model desktop AI productivity studio with smart chat, autonomous agents, assistants, and tool integration.</p>
-</li>
-<li><p><a href="https://github.com/hugohe3/ppt-master">hugohe3/ppt-master</a> — ⭐52,041<br>Turns documents/topics into native PowerPoint decks with real shapes, animations, charts, and optional audio narration.</p>
-</li>
-<li><p><a href="https://github.com/zhayujie/CowAgent">zhayujie/CowAgent</a> — ⭐46,783<br>Open-source super assistant / agent harness (formerly chatgpt-on-wechat) with multi-channel support, memory, tools, and skills.</p>
-</li>
-</ul>
-<hr>
-<h3>🧠 LLMs / Training</h3>
-<ul>
-<li><p><a href="https://github.com/google-research/timesfm">google-research/timesfm</a> — +342 today<br>Pretrained time-series foundation model from Google Research for forecasting; evidence that “foundation model” work is moving well beyond natural language.</p>
-</li>
-<li><p><a href="https://github.com/radixark/miles">radixark/miles</a> — +64 today<br>Enterprise-facing reinforcement-learning framework for LLM/VLM post-training, forked from and co-evolving with <code>slime</code>.</p>
-</li>
-<li><p><a href="https://github.com/rasbt/LLMs-from-scratch">rasbt/LLMs-from-scratch</a> — ⭐104,347<br>The most popular educational walkthrough for implementing a ChatGPT-like LLM in PyTorch from scratch.</p>
-</li>
-<li><p><a href="https://github.com/jingyaogong/minimind">jingyaogong/minimind</a> — ⭐58,568<br>Train a 64M-parameter LLM from scratch in about 2 hours — practical for researchers who need fast small-model experimentation.</p>
-</li>
-<li><p><a href="https://github.com/open-compass/opencompass">open-compass/opencompass</a> — ⭐7,394<br>Comprehensive LLM evaluation platform covering 100+ datasets; increasingly necessary for model adaptation and post-training validation.</p>
-</li>
-<li><p><a href="https://github.com/skyzh/tiny-llm">skyzh/tiny-llm</a> — ⭐4,542<br>Build a tiny vLLM-style inference system on Apple Silicon; accessible systems-level introduction to LLM serving.</p>
-</li>
-</ul>
-<hr>
-<h3>🔍 RAG / Knowledge</h3>
-<ul>
-<li><p><a href="https://github.com/infiniflow/ragflow">infiniflow/ragflow</a> — ⭐90,061<br>Leading open-source RAG engine combining retrieval-augmented generation with agent capabilities for enterprise context layers.</p>
-</li>
-<li><p><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a> — ⭐93,212<br>Persistent cross-session agent memory: captures agent session activity, compresses it with AI, and injects relevant context into future sessions.</p>
-</li>
-<li><p><a href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify</a> — ⭐114,806<br>Turns codebases, docs, SQL schemas, configs, and PDFs into queryable knowledge graphs via deterministic AST parsing — no vector store needed.</p>
-</li>
-<li><p><a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> — ⭐64,714<br>Drop-in memory layer for AI agents; built for production persistent context.</p>
-</li>
-<li><p><a href="https://github.com/run-llama/llama_index">run-llama/llama_index</a> — ⭐52,026<br>Leading document-agent and OCR/RAG framework for connecting LLMs to enterprise data.</p>
-</li>
-<li><p><a href="https://github.com/milvus-io/milvus">milvus-io/milvus</a> — ⭐45,977<br>Cloud-native vector database for scalable vector ANN search; core infrastructure for production RAG.</p>
-</li>
-<li><p><a href="https://github.com/qdrant/qdrant">qdrant/qdrant</a> — ⭐34,392<br>High-performance vector database and search engine built specifically for next-generation AI applications.</p>
-</li>
-<li><p><a href="https://github.com/StarTrail-org/LEANN">StarTrail-org/LEANN</a> — ⭐12,890<br>MLsys 2026 Best Paper; claims 97% storage savings while supporting fast, accurate, 100% private RAG on edge devices.</p>
-</li>
-</ul>
-<hr>
-<h2>3. Trend Signal Analysis</h2>
-<p>The explosive growth today is around the <strong>Agent Skills layer</strong>, not a single model or framework. Three of the most-starred AI repos are skill/harness packs for existing agents, and Anthropic’s official skills repository gives the format institutional credibility. Developers are no longer mainly building “agents from scratch”; they are packaging <strong>behavior, instincts, memory, and constraints</strong> into installable skill directories.</p>
-<p>A second major signal is <strong>token and context-cost engineering</strong>. <code>caveman</code> claims massive token savings, <code>ponytail</code> sells lazy-senior-dev behavior, <code>humanizer</code> removes AI-sounding patterns, and <code>headroom</code> compresses context before it reaches the LLM. These are small, opinionated “performance packs” rather than large frameworks — and they are exactly the kind of lightweight additions that today’s coding-agent CLIs make easy to adopt.</p>
-<p>Third, <strong>local-first AI is becoming multimodal</strong>. <code>magnitudedev/magnitude</code> makes local inference a drop-in layer for existing agents, <code>Ollama</code> has absorbed the latest open-weight releases from Kimi, GLM, MiniMax, DeepSeek, and gpt-oss, and <code>VoiceStudio</code> shows that high-quality voice generation can run locally. This is a direct response to the rapid cadence of open model releases: users want hardware-aware serving, not another cloud API.</p>
-<p>Finally, RAG is quietly being challenged by <strong>vectorless knowledge approaches</strong>. <code>Graphify-Labs/graphify</code> builds structured knowledge graphs without vector embeddings, and <code>LEANN</code> offers vectorless, storage-efficient edge RAG. The direction suggests that heavy vector-database pipelines are no longer assumed to be the only answer to persistent agent memory.</p>
-<hr>
-<h2>4. Community Hot Spots</h2>
-<ul>
-<li><p><strong>Agent Skills as a distribution format</strong> — Watch <a href="https://github.com/anthropics/skills">anthropics/skills</a>, <a href="https://github.com/mattpocock/skills">mattpocock/skills</a>, and <a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a>. The <code>.agents</code> / skill-directory convention is becoming a mini-ecosystem, and tooling for skill discovery, versioning, and security will likely follow.</p>
-</li>
-<li><p><strong>Memory and context persistence</strong> — <a href="https://github.com/thedotmack/claude-mem">claude-mem</a>, <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a>, and <a href="https://github.com/NousResearch/hermes-agent">hermes-agent</a> all signal that agents without durable memory are no longer acceptable for serious workflows.</p>
-</li>
-<li><p><strong>Token-efficiency and “agent personality packs”</strong> — <a href="https://github.com/JuliusBrussee/caveman">caveman</a>, <a href="https://github.com/DietrichGebert/ponytail">ponytail</a>, and <a href="https://github.com/headroomlabs-ai/headroom">headroom</a> are worth studying for cost and latency optimization, even if their personas are intentionally extreme.</p>
-</li>
-<li><p><strong>Local inference and hardware-aware serving</strong> — <a href="https://github.com/magnitudedev/magnitude">magnitudedev/magnitude</a>, <a href="https://github.com/ollama/ollama">ollama/ollama</a>, and <a href="https://github.com/StarTrail-org/LEANN">StarTrail-org/LEANN</a> point to a future where models and RAG run efficiently on user-controlled hardware.</p>
-</li>
-<li><p><strong>RL post-training and evaluation</strong> — <a href="https://github.com/radixark/miles">radixark/miles</a> and <a href="https://github.com/open-compass/opencompass">open-compass/opencompass</a> show that the open-source community is moving from “pretrain/talk to model” toward enterprise-grade post-training, evaluation, and domain adaptation.</p>
-</li>
-</ul>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/ycsxh/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
