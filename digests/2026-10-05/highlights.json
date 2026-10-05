@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "Claude 11天自主形式化费马大定理，HN 531分",
+      "collusion.wiki HN 1538分/1229评",
+      "mattpocock/skills 日增 2758 star",
+      "OpenClaw v2026.9.2 优化事件循环",
+      "Claude Code v2.1.263 领衔 CLI 发版",
+      "GPT-6 Astra 上线 OpenRouter"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "Anthropic formalizes Fermat in Lean 4 with Claude",
+      "mattpocock/skills adds +2,758 stars in a day",
+      "OpenAI agent message board post hits 1,538 HN points",
+      "GPT-6 Astra debuts on OpenRouter amid outages",
+      "OpenClaw ships v2026.9.2 with Gateway fixes",
+      "Spotify Portal claims 90% Claude Code token cut"
+    ]
+  }
+}
