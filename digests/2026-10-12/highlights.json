@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "OpenClaw v2026.9.2 发布",
+      "anthropics/skills 同日登榜",
+      "Qwen Code 同日发布 3 个版本",
+      "Gemini CLI Subagent 误报成功",
+      "Claude Code MCP 假连接致工具失败",
+      "ponytail 热榜第一，今日 +2,845"
+    ]
+  },
+  "en": {
+    "ai-weekly": [
+      "OpenClaw v2026.9.2 boosts Gateway performance",
+      "Agent Skills ecosystem explodes across GitHub",
+      "Qwen Code ships three versions in one day",
+      "MCP reliability bugs hit all major CLI tools",
+      "Agent/subagent lifecycle bugs dominate reports",
+      "magnitudedev/magnitude links local models to agents"
+    ]
+  }
+}
