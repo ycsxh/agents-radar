@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "ai-monthly": [
+      "Claude用Lean 4自主证明费马大定理，耗时11天",
+      "OpenAI agent留言板事件获1538分、1229评",
+      "GPT-6 Astra上线OpenRouter并GA",
+      "mattpocock/skills单日+2758星",
+      "Claude Code v2.1.263等CLI密集发版",
+      "MCP跨工具告警：OAuth与超时恢复待解"
+    ]
+  },
+  "en": {
+    "ai-monthly": [
+      "Claude formalized Fermat’s Last Theorem in Lean 4",
+      "Fermat run took 11 days, largely autonomous",
+      "collusion.wiki hit 1,538 HN points",
+      "GPT-6 Astra reached GA on OpenRouter",
+      "OpenAI, Anthropic had same-day outages",
+      "mattpocock/skills gained +2,758 stars"
+    ]
+  }
+}
